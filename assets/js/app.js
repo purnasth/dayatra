@@ -177,7 +177,7 @@ function initializeCarousel() {
         items: 2,
       },
       1024: {
-        items: 2.25,
+        items: 1.85,
       },
     },
   });
