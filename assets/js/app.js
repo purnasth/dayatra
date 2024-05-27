@@ -67,41 +67,6 @@ function initializeNavbar() {
   });
 }
 
-function initializeDropdown() {
-  var links = document.querySelectorAll(".dropdown > a");
-  var dropdowns = document.querySelectorAll(".dropdown");
-
-  document.addEventListener("click", function (event) {
-    var isInsideDropdown = false;
-
-    dropdowns.forEach(function (dropdown) {
-      if (dropdown.contains(event.target)) {
-        isInsideDropdown = true;
-      }
-    });
-
-    if (!isInsideDropdown) {
-      dropdowns.forEach(function (dropdown) {
-        dropdown.classList.remove("active");
-      });
-    }
-  });
-
-  links.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      var parentLi = link.parentElement;
-      dropdowns.forEach(function (dropdown) {
-        if (dropdown !== parentLi) {
-          dropdown.classList.remove("active");
-        }
-      });
-
-      parentLi.classList.toggle("active");
-    });
-  });
-}
-
 function startHeroVideo() {
   var backgroundVideo = document.getElementById("backgroundVideo");
   backgroundVideo.play();
@@ -186,7 +151,6 @@ function initializeCarousel() {
 jQuery(window).on("load", function () {
   loadComponents().then(() => {
     initializeNavbar();
-    initializeDropdown();
     startHeroVideo();
     initializeCarousel();
   });
