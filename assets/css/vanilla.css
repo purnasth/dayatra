@@ -1,0 +1,22 @@
+.owl-nav button {
+    font-size: 2rem !important;
+    margin: 10px 40px !important;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.owl-nav button:hover {
+    color: inherit !important;
+    background: none !important;
+    opacity: 1;
+}
+
+/* .testimonial .owl-dots {
+    transform: translateY(-140px);
+    width: 100px;
+    margin-left: 3.5rem;
+}
+
+.testimonial .owl-dots button {
+    transform: scale(0.75);
+} */
