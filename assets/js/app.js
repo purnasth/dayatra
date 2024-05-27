@@ -9,7 +9,7 @@ function loadHtml(filePath, elementId) {
 function loadComponents() {
   // Define all the components to load with their file paths and corresponding element IDs
   const components = [
-    { filePath: "navbar.html", elementId: "navbarComponent" },
+    { filePath: "assets/html/navbar.html", elementId: "navbarComponent" },
     { filePath: "assets/html/holiday.html", elementId: "holidayComponent" },
     { filePath: "assets/html/about.html", elementId: "aboutComponent" },
     {
