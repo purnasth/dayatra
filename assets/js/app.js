@@ -13,6 +13,10 @@ function loadComponents() {
     { filePath: "assets/html/holiday.html", elementId: "holidayComponent" },
     { filePath: "assets/html/about.html", elementId: "aboutComponent" },
     {
+      filePath: "assets/html/accommodation.html",
+      elementId: "accommodationComponent",
+    },
+    {
       filePath: "assets/html/testimonial.html",
       elementId: "testimonialComponent",
     },
@@ -155,6 +159,25 @@ function initializeCarousel() {
       },
       1024: {
         items: 4,
+      },
+    },
+  });
+  $(".accommodation.owl-carousel").owlCarousel({
+    loop: true,
+    margin: 50,
+    nav: true,
+    dots: false,
+    center: true,
+    // autoWidth: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      1024: {
+        items: 2.25,
       },
     },
   });
