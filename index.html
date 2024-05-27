@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline bg-red-500">Hello to Hotel Da Yatra!</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="overflow-x-hidden">
+  <header class="bg-transparent sticky top-0 z-50">
+    <div
+      class="blur-bg absolute w-full p-4 transition-all duration-200 ease-linear bg-gradient-to-t from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)]">
+      <div class="contai ner">
+        <div class="flex justify-between items-start h-24 p-4">
+          <div class="flex items-center justify-center gap-8">
+            <button type="menu" id="toggleButton" class="text-custom-white focus:outline-none p-2"
+              aria-label="Toggle Button" title="Toggle">
+              <i id="hamburgerIcon" class="fa-solid fa-bars text-2xl"></i>
+              <i id="closeIcon" class="hidden fa-solid fa-xmark text-3xl"></i>
+            </button>
+            <ul class="flex items-center justify-center gap-6 text-custom-white text-lg">
+              <li class="caps block w-full">
+                <a href="#" class="nav-link" aria-label="Stay">Stay</a>
+              </li>
+              <li class="caps block w-full">
+                <a href="#" class="nav-link" aria-label="Dine">Dine</a>
+              </li>
+              <li class="caps block w-full">
+                <a href="#" class="nav-link" aria-label="Events">Events</a>
+              </li>
+              <li class="caps block w-full">
+                <a href="#" class="nav-link" aria-label="Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="fixed left-1/2 top-0 -translate-x-1/2 mt-2">
+            <a href="/" aria-label="Logo">
+              <img src="./assets/img/logo.svg" alt="Logo" class="w-24 md:w-32 h-auto object-contain" />
+            </a>
+          </div>
+          <div class="flex items-center justify-center gap-4">
+            <a href="tel:+97761452462" target="_blank"
+              class="caps hidden md:block bg-coffee-700 text-custom-white px-4 py-2 rounded-xl tracking-wider"
+              aria-label="Call" title="Call">
+              <i class="fa-solid fa-phone"></i>
+              +97761452462
+            </a>
+            <button type="button"
+              class="caps hidden md:block bg-custom-white/20 hover:bg-custom-white/50 text-custom-white border border-white shadow-md px-4 py-2 rounded-xl tracking-wider transition-all duration-300 ease-linear"
+              aria-label="Reserve" title="Reserve">
+              <i class="mr-2 fa-regular fa-clipboard"></i>
+              Reserve
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-10 hidden"></div>
+  <nav id="navLinks"
+    class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-coffee-700 transition-transform duration-300 ease-in-out z-[99] p-2 -translate-x-full">
+    <div class="relative">
+      <div
+        class="absolute top-0 -left-[300%] bg-repeat-x bg-left bg-contain w-screen h-40 mix-blend-multiply opacity-30 -z-10 rotate-90"
+        style="background-image: url('./svg/building.svg')"></div>
+      <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Home">Home</a>
+        </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="About">About <i
+              class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 left-full bg-transparent flex items-start justify-center gap-2 flex-col p-2 invisible w-full ml-2 md:ml-8 rounded-xl">
+            <li class="w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Our Story">Our Story</a>
+            </li>
+            <li class="w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Our History">Our History</a>
+            </li>
+
+          </ul>
+        </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Rooms">Rooms <i
+              class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full lg:w-[60vw] z-[99] ml-2 md:ml-8 rounded-xl">
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Traditional Room">
+                <h4>Traditional Room</h4>
+                <img src="https://www.babermahalvilas.com/images/package/JiQAV-bumpa.jpg" alt
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Traditional Suite">
+                <h4>Traditional Suite</h4>
+                <img src="https://www.babermahalvilas.com/images/package/MfzsV-chatra.jpg" alt
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Heritage Suite">
+                <h4>Heritage Suite</h4>
+                <img src="https://www.babermahalvilas.com/images/package/tAOZ7-dhvaja.jpg" alt
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Royal Suite">
+                <h4>Royal Suite</h4>
+                <img src="https://www.babermahalvilas.com/images/slideshow/J2WCs-untitled-3.jpg" alt
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="caps dropdown nav-link">
+          <a href="#" class="flex items-center justify-between w-full" aria-label="Dining">
+            Dining <i class="fa-solid fa-chevron-right"></i></a>
+          <ul
+            class="drop absolute -top-3/4 lg:-top-full left-full bg-transparent text-coffee-700 flex items-start justify-center gap-2 flex-col md:flex-row p-2 invisible w-full md:w-[30vw] z-[99] ml-2 md:ml-8 rounded-xl">
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Jyunar">
+                <h4>Jyunar</h4>
+                <img src="https://www.babermahalvilas.com/userfiles/images/dien.jpg" alt
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+            <li class="block w-full">
+              <a href="#" class="navlink-dropdown" aria-label="Surya Bar">
+                <h4>Surya Bar</h4>
+                <img src="https://www.babermahalvilas.com/assets/userfiles/images/bar1.jpg" alt
+                  class="hidden lg:block w-full h-28 object-cover" />
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Spa">Spa</a>
+        </li>
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Services">Services</a>
+        </li>
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
+        </li>
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Press">Press</a>
+        </li>
+        <li class="caps block w-full">
+          <a href="#" class="nav-link" aria-label="Contact">Contact</a>
+        </li>
+        <button type="button"
+          class="caps w-full md:hidden text-coffee-700 bg-coffee-400 px-4 py-2 rounded-xl text-lg tracking-wider"
+          aria-label="Book Now" title="Book">
+          <i class="mr-2 fa-solid fa-calendar-check"></i>
+          Book Now
+        </button>
+      </ul>
+      <div class="flex items-center justify-center xl:hidden">
+        <a href="#" aria-label="Logo">
+          <img src="./img/logo.svg" alt="Logo" class="w-full h-auto object-contain rounded-full p-2" />
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative">
+    <video autoplay loop muted playsinline id="backgroundVideo" poster="./assets/img/dayatra.webp"
+      class="w-full h-screen object-cover">
+      <!-- <source src="./assets/video/dayatra.mp4" type="video/mp4" /> -->
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-black/0 z-0"></div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
 </html>
