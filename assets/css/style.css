@@ -15,4 +15,17 @@
     #navbarComponent {
         @apply sticky top-0 z-50;
     }
+
+    .navlink {
+        @apply no-underline transition-all duration-500 underline-offset-2;
+    }
+
+    .navlink:hover,
+    .navlink.active:hover {
+        @apply underline underline-offset-8;
+    }
+
+    .navlink.active {
+        @apply underline underline-offset-4;
+    }
 }
