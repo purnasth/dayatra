@@ -12,6 +12,7 @@ function loadComponents() {
     { filePath: "assets/html/navbar.html", elementId: "navbarComponent" },
     { filePath: "assets/html/holiday.html", elementId: "holidayComponent" },
     { filePath: "assets/html/about.html", elementId: "aboutComponent" },
+    { filePath: "assets/html/contact.html", elementId: "contactComponent" },
     {
       filePath: "assets/html/accommodation.html",
       elementId: "accommodationComponent",
@@ -19,6 +20,10 @@ function loadComponents() {
     {
       filePath: "assets/html/testimonial.html",
       elementId: "testimonialComponent",
+    },
+    {
+      filePath: "assets/html/footer.html",
+      elementId: "footerComponent",
     },
   ];
 
