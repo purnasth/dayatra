@@ -1,26 +1,26 @@
 <header
-    class="blur-bg absolute w-full p-4 transition-all duration-200 ease-linear bg-gradient-to-t from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.75)]">
+    class="blur-bg absolute w-full p-4 pb-12 transition-all duration-200 ease-linear bg-gradient-to-b from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0)]">
     <div class="contai ner">
         <div class="flex justify-between items-start p-4">
             <div class="flex items-center justify-center gap-8">
                 <button type="menu" id="toggleButton"
                     class="focus:outline-none p-2 z-50 transition-all duration-300 ease-linear"
                     aria-label="Toggle Button" title="Toggle">
-                    <i id="hamburgerIcon" class="fa-solid fa-bars text-2xl text-custom-white"></i>
-                    <i id="closeIcon" class="hidden fa-solid fa-xmark text-3xl text-custom-black "></i>
+                    <i id="hamburgerIcon" class="fa-solid fa-bars text-xl text-custom-white"></i>
+                    <i id="closeIcon" class="hidden fa-solid fa-xmark text-xl text-custom-black"></i>
                 </button>
                 <ul class="flex items-center justify-center gap-6 text-custom-white text-lg">
-                    <li class="block w-full">
-                        <a href="#" class="nav-link" aria-label="Stay">Stay</a>
+                    <li class="w-full">
+                        <a href="#" class="navlink" aria-label="Stay">Stay</a>
                     </li>
-                    <li class="block w-full">
-                        <a href="#" class="nav-link" aria-label="Dine">Dine</a>
+                    <li class="w-full">
+                        <a href="#" class="navlink" aria-label="Dine">Dine</a>
                     </li>
-                    <li class="block w-full">
-                        <a href="#" class="nav-link" aria-label="Events">Events</a>
+                    <li class="w-full">
+                        <a href="#" class="navlink" aria-label="Events">Events</a>
                     </li>
-                    <li class="block w-full">
-                        <a href="#" class="nav-link" aria-label="Contact">Contact</a>
+                    <li class="w-full">
+                        <a href="#" class="navlink" aria-label="Contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -47,41 +47,47 @@
         </div>
     </div>
 </header>
-<div id="overlay" class="fixed inset-0 bg-black opacity-50 z-10 hidden transition-all duration-700 ease-linear">
+<div id="overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-10 hidden transition-all duration-700 ease-linear">
 </div>
-<nav id="navLinks"
+<nav id="navMenu"
     class="fixed left-0 top-0 w-1/2 md:w-2/6 lg:w-1/6 h-screen bg-custom-white transition-transform duration-300 ease-in-out z-40 p-2 -translate-x-full">
-    <div class="relative mt-24">
-        <ul class="links flex items-start justify-start gap-1 md:gap-3 flex-col">
-            <li class="block w-full">
-                <a href="#" class="nav-link" aria-label="Home">Home</a>
+    <div class="relative mt-8">
+        <a href="/" aria-label="Logo">
+            <img src="./assets/img/logo.svg" alt="Logo"
+                class="w-24 md:w-32 h-auto object-contain transition-all duration-300 ease-linear mx-auto" id="logo" />
+        </a>
+        <ul class="mt-6 links flex items-start justify-start gap-2 md:gap-0 flex-col">
+            <li class="w-full">
+                <a href="/" class="navlink w-full p-4 inline-block text-xl rounded-lg" aria-label="Home">Home</a>
             </li>
-            <li class="block w-full">
-                <a href="#" class="nav-link" aria-label="Spa">Spa</a>
+            <li class="w-full">
+                <a href="#" class="navlink w-full p-4 inline-block text-xl rounded-lg" aria-label="About">About</a>
             </li>
-            <li class="block w-full">
-                <a href="#" class="nav-link" aria-label="Services">Services</a>
+            <li class="w-full">
+                <a href="#" class="navlink w-full p-4 inline-block text-xl rounded-lg" aria-label="Rooms">Rooms</a>
             </li>
-            <li class="block w-full">
-                <a href="#" class="nav-link" aria-label="Gallery">Gallery</a>
+            <li class="w-full">
+                <a href="#" class="navlink w-full p-4 inline-block text-xl rounded-lg"
+                    aria-label="Dining">Dining</a>
             </li>
-            <li class="block w-full">
-                <a href="#" class="nav-link" aria-label="Press">Press</a>
+            <li class="w-full">
+                <a href="#" class="navlink w-full p-4 inline-block text-xl rounded-lg"
+                    aria-label="Events">Events</a>
             </li>
-            <li class="block w-full">
-                <a href="#" class="nav-link" aria-label="Contact">Contact</a>
+            <li class="w-full">
+                <a href="#" class="navlink w-full p-4 inline-block text-xl rounded-lg"
+                    aria-label="Gallery">Gallery</a>
+            </li>
+            <li class="w-full">
+                <a href="#" class="navlink w-full p-4 inline-block text-xl rounded-lg"
+                    aria-label="Contact">Contact</a>
             </li>
             <button type="button"
-                class="w-full md:hidden text-coffee-700 bg-coffee-400 px-4 py-2 rounded-xl text-lg tracking-wider"
+                class="mt-12 w-full hidd en text-black bg-black/30 px-4 py-2 rounded-xl text-lg tracking-wider"
                 aria-label="Reserve" title="Reserve">
                 <i class="mr-2 fa-solid fa-calendar-check"></i>
                 Reserve
             </button>
         </ul>
-        <div class="flex items-center justify-center xl:hidden">
-            <a href="#" aria-label="Logo">
-                <img src="./assets/img/logo.svg" alt="Logo" class="w-full h-auto object-contain rounded-full p-2" />
-            </a>
-        </div>
     </div>
 </nav>

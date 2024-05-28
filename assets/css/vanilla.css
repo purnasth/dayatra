@@ -21,46 +21,19 @@
     transform: scale(0.75);
 } */
 
-.ham {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.navlink {
+    text-decoration: none;
+    transition: all 0.5s;
+    text-decoration: none;
+    text-underline-offset: 2px;
 }
 
-.line {
-    fill: none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: #000;
-    stroke-width: 5.5;
-    stroke-linecap: round;
+.navlink:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 
-.ham3 .top {
-    stroke-dasharray: 40 130;
-}
-
-.ham3 .middle {
-    stroke-dasharray: 40 140;
-}
-
-.ham3 .bottom {
-    stroke-dasharray: 40 205;
-}
-
-.ham3.active .top {
-    stroke-dasharray: 75 130;
-    stroke-dashoffset: -63px;
-}
-
-.ham3.active .middle {
-    stroke-dashoffset: -102px;
-}
-
-.ham3.active .bottom {
-    stroke-dasharray: 110 205;
-    stroke-dashoffset: -86px;
+.navlink.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }

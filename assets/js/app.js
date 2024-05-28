@@ -37,38 +37,45 @@ function loadComponents() {
 }
 
 function initializeNavbar() {
-  const logo = document.getElementById("logo");
   const toggleButton = document.getElementById("toggleButton");
   const hamburgerIcon = document.getElementById("hamburgerIcon");
   const closeIcon = document.getElementById("closeIcon");
-  const navLinks = document.getElementById("navLinks");
+  const navMenu = document.getElementById("navMenu");
   const overlay = document.getElementById("overlay");
-  const header = document.querySelector(".blur-bg");
+  const navLinks = document.querySelectorAll(".navlink");
+  const currentUrl = window.location.href;
 
   toggleButton.addEventListener("click", function () {
-    navLinks.classList.toggle("-translate-x-full");
+    navMenu.classList.toggle("-translate-x-full");
+    overlay.classList.toggle("hidden");
     hamburgerIcon.classList.toggle("hidden");
     closeIcon.classList.toggle("hidden");
-    overlay.classList.toggle("hidden");
   });
 
   overlay.addEventListener("click", function () {
-    navLinks.classList.add("-translate-x-full");
+    navMenu.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
     hamburgerIcon.classList.remove("hidden");
     closeIcon.classList.add("hidden");
-    overlay.classList.add("hidden");
   });
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 0) {
-      header.classList.add("backdrop-blur-sm");
-      header.classList.remove("bg-transparent");
-      logo.classList.add("scale-75");
+  navLinks.forEach(function (link) {
+    if (link.href === currentUrl) {
+      link.classList.add("active");
     } else {
-      header.classList.remove("backdrop-blur-sm");
-      header.classList.add("bg-transparent");
-      logo.classList.remove("scale-100");
+      link.classList.remove("active");
     }
+
+    link.addEventListener("click", function () {
+      navLinks.forEach(function (l) {
+        l.classList.remove("active");
+      });
+      link.classList.add("active");
+      navMenu.classList.add("-translate-x-full");
+      overlay.classList.add("hidden");
+      hamburgerIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+    });
   });
 }
 
@@ -83,6 +90,8 @@ function initializeCarousel() {
     margin: 32, // Increased margin to 32
     nav: true, // Next and prev arrows enabled
     dots: false, // Indicator dots enabled
+    autoplay: true,
+    autoplayTimeout: 5000,
     responsive: {
       0: {
         items: 1,
@@ -100,6 +109,8 @@ function initializeCarousel() {
     margin: 32,
     nav: true,
     dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
     items: 1,
     // responsive: {
     //   0: {
@@ -120,6 +131,8 @@ function initializeCarousel() {
     dots: false,
     center: true,
     autoWidth: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
     responsive: {
       0: {
         items: 1,
@@ -138,6 +151,8 @@ function initializeCarousel() {
     nav: true,
     dots: false,
     center: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
     // autoWidth: true,
     responsive: {
       0: {
