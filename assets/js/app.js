@@ -169,6 +169,23 @@ function initializeCarousel() {
   });
 }
 
+const scrollToTopButton = document.getElementById("scroll-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    scrollToTopButton.style.display = "block";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 jQuery(window).on("load", function () {
   loadComponents().then(() => {
     initializeNavbar();
