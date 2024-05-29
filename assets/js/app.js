@@ -11,6 +11,7 @@ function loadComponents() {
   const components = [
     { filePath: "assets/html/navbar.html", elementId: "navbarComponent" },
     { filePath: "assets/html/holiday.html", elementId: "holidayComponent" },
+    { filePath: "assets/html/blogs.html", elementId: "blogsComponent" },
     { filePath: "assets/html/about.html", elementId: "aboutComponent" },
     { filePath: "assets/html/contact.html", elementId: "contactComponent" },
     {
@@ -86,7 +87,7 @@ function startHeroVideo() {
 
 function initializeCarousel() {
   $(".holiday.owl-carousel").owlCarousel({
-    loop: false, // Loop is turned off
+    loop: true, // Loop is turned on
     margin: 32, // Increased margin to 32
     nav: true, // Next and prev arrows enabled
     dots: false, // Indicator dots enabled
@@ -105,7 +106,7 @@ function initializeCarousel() {
     },
   });
   $(".testimonial.owl-carousel").owlCarousel({
-    loop: false,
+    loop: true,
     margin: 32,
     nav: true,
     dots: false,
