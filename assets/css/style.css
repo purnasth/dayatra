@@ -9,7 +9,8 @@
 
     section {
         /* @apply py-32 px-4 sm:py-40 md:px-12 md:pt-[12rem] md:pb-[7.5rem] lg:pt-[16rem] lg:pb-[10rem] relative z-10; */
-        @apply py-20 px-4 sm:py-32 md:px-12 md:pt-[8.5rem] md:pb-[6.5rem] lg:pt-[10rem] lg:pb-[8rem] relative z-10;
+        /* @apply py-20 px-4 sm:py-32 md:px-12 md:pt-[8.5rem] md:pb-[6.5rem] lg:pt-[10rem] lg:pb-[8rem] relative z-10; */
+        @apply py-20 px-4 sm:py-32 md:px-12 md:pt-[8.5rem] md:pb-[6.5rem] lg:pt-[10rem] lg:pb-[2rem] relative z-10;
     }
 
     #navbarComponent {
