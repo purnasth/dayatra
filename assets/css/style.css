@@ -9,8 +9,7 @@
 
     section {
         /* @apply py-32 px-4 sm:py-40 md:px-12 md:pt-[12rem] md:pb-[7.5rem] lg:pt-[16rem] lg:pb-[10rem] relative z-10; */
-        /* @apply py-20 px-4 sm:py-32 md:px-12 md:pt-[8.5rem] md:pb-[6.5rem] lg:pt-[10rem] lg:pb-[8rem] relative z-10; */
-        @apply py-20 px-4 sm:py-32 md:px-12 md:pt-[8.5rem] md:pb-[6.5rem] lg:pt-[10rem] lg:pb-[2rem] relative z-10;
+        @apply py-20 px-4 sm:py-32 md:px-12 md:pt-[8.5rem] md:pb-[6.5rem] lg:pt-[10rem] lg:pb-[8rem] relative z-10;
     }
 
     #navbarComponent {
@@ -18,15 +17,15 @@
     }
 
     .navlink {
-        @apply no-underline transition-all duration-500 underline-offset-2;
+        @apply text-black/80 no-underline transition-all duration-500 underline-offset-2;
     }
 
     .navlink:hover,
     .navlink.active:hover {
-        @apply underline underline-offset-8;
+        @apply text-black/90 underline underline-offset-8;
     }
 
     .navlink.active {
-        @apply underline underline-offset-4;
+        @apply text-logo-950 underline underline-offset-4;
     }
 }

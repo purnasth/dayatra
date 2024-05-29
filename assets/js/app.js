@@ -13,10 +13,10 @@ function loadComponents() {
     { filePath: "assets/html/holiday.html", elementId: "holidayComponent" },
     { filePath: "assets/html/blogs.html", elementId: "blogsComponent" },
     { filePath: "assets/html/about.html", elementId: "aboutComponent" },
-    // {
-    //   filePath: "assets/html/facilities.html",
-    //   elementId: "facilitiesComponent",
-    // },
+    {
+      filePath: "assets/html/facilities.html",
+      elementId: "facilitiesComponent",
+    },
     { filePath: "assets/html/contact.html", elementId: "contactComponent" },
     {
       filePath: "assets/html/accommodation.html",
