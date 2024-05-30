@@ -20,3 +20,23 @@
 .testimonial .owl-dots button {
     transform: scale(0.75);
 } */
+
+header .navlink,
+header .navlink:hover,
+header .navlink.active {
+    color: #fff !important;
+}
+
+nav .navlink {
+    color: rgba(0, 0, 0, 0.8) !important;
+
+}
+
+nav .navlink:hover,
+nav .navlink.active:hover {
+    color: rgba(0, 0, 0, 0.9) !important;
+}
+
+nav .navlink.active {
+    color: #451a03 !important;
+}

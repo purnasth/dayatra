@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 @layer components {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #fde68a #000;
+        /* scrollbar-color: #E9C279 #000000; */
+    }
+
+    ::selection {
+        @apply bg-logo-200 text-black;
+    }
+
     body {
         @apply font-title;
     }
@@ -17,15 +27,23 @@
     }
 
     .navlink {
-        @apply text-black/80 no-underline transition-all duration-500 underline-offset-2;
+        @apply no-underline transition-all duration-500 underline-offset-2;
     }
 
     .navlink:hover,
     .navlink.active:hover {
-        @apply text-black/90 underline underline-offset-8;
+        @apply underline underline-offset-8;
     }
 
     .navlink.active {
-        @apply text-logo-950 underline underline-offset-4;
+        @apply underline underline-offset-4;
+    }
+
+    #header.scrolled {
+        @apply backdrop-blur-[2px];
+    }
+
+    #header.scrolled #logo {
+        @apply h-20;
     }
 }

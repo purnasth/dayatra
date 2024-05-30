@@ -27,6 +27,10 @@ function loadComponents() {
       elementId: "testimonialComponent",
     },
     {
+      filePath: "assets/html/ota.html",
+      elementId: "otaComponent",
+    },
+    {
       filePath: "assets/html/footer.html",
       elementId: "footerComponent",
     },
@@ -42,6 +46,7 @@ function loadComponents() {
 }
 
 function initializeNavbar() {
+  const header = document.getElementById("header");
   const toggleButton = document.getElementById("toggleButton");
   const hamburgerIcon = document.getElementById("hamburgerIcon");
   const closeIcon = document.getElementById("closeIcon");
@@ -49,6 +54,14 @@ function initializeNavbar() {
   const overlay = document.getElementById("overlay");
   const navLinks = document.querySelectorAll(".navlink");
   const currentUrl = window.location.href;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
 
   toggleButton.addEventListener("click", function () {
     navMenu.classList.toggle("-translate-x-full");
@@ -106,6 +119,25 @@ function initializeCarousel() {
       },
       1024: {
         items: 4,
+      },
+    },
+  });
+  $(".blogs.owl-carousel").owlCarousel({
+    loop: true,
+    margin: 40,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      1024: {
+        items: 3,
       },
     },
   });
