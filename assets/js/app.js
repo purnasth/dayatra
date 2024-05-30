@@ -146,7 +146,7 @@ function initializeCarousel() {
     margin: 32,
     nav: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000,
     items: 1,
     // responsive: {
