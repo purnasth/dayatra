@@ -164,7 +164,7 @@ function initializeCarousel() {
   $(".about.owl-carousel").owlCarousel({
     loop: true,
     margin: 0,
-    nav: true,
+    nav: false,
     dots: false,
     center: true,
     autoWidth: true,
