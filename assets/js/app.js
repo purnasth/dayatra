@@ -167,7 +167,7 @@ function initializeCarousel() {
     nav: false,
     dots: false,
     center: true,
-    autoWidth: true,
+    // autoWidth: true,
     autoplay: true,
     autoplayTimeout: 5000,
     responsive: {
@@ -178,7 +178,7 @@ function initializeCarousel() {
         items: 2,
       },
       1024: {
-        items: 4,
+        items: 1.5,
       },
     },
   });
