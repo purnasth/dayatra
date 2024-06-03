@@ -690,6 +690,10 @@ section {
   inset: 0px;
 }
 
+.-top-12 {
+  top: -3rem;
+}
+
 .-top-20 {
   top: -5rem;
 }
@@ -1256,6 +1260,11 @@ section {
   background-color: rgb(69 26 3 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1285,12 +1294,20 @@ section {
   background-image: url('./assets/img/patterns/statue.svg');
 }
 
+.bg-\[url\(\'https\:\/\/www\.annapurnaview\.com\/uploads\/original\/03-tk2ITK10huZBp1EHEHNZxtgXkMqTEgFFu3KCVZNW\.jpg\'\)\] {
+  background-image: url('https://www.annapurnaview.com/uploads/original/03-tk2ITK10huZBp1EHEHNZxtgXkMqTEgFFu3KCVZNW.jpg');
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'https\:\/\/zoartsglobal\.com\/wp-content\/uploads\/2020\/08\/Nepal-Pokhara\.png\'\)\] {
+  background-image: url('https://zoartsglobal.com/wp-content/uploads/2020/08/Nepal-Pokhara.png');
 }
 
 .from-\[\#3c1e01\] {
