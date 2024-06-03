@@ -40,3 +40,10 @@ nav .navlink.active:hover {
 nav .navlink.active {
     color: #451a03 !important;
 }
+
+
+
+.room-details li:not(:last-child)::after {
+    content: " /";
+    margin-left: 0.5em;
+}
