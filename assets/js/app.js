@@ -222,10 +222,45 @@ function scrollToTop() {
   });
 }
 
+function initializeScrollTrigger() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".boat",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      markers: false,
+      id: "scrub",
+    },
+  });
+  tl.to(".boat", {
+    duration: 50,
+    x: -1100,
+  });
+
+  let paraglideTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".paraglide",
+      start: "bottom bottom",
+      end: "top top",
+      scrub: true,
+      markers: false,
+      id: "paraglide",
+    },
+  });
+  paraglideTl.to(".paraglide", {
+    duration: 500,
+    y: -200,
+  });
+}
+
 jQuery(window).on("load", function () {
   loadComponents().then(() => {
     initializeNavbar();
     startHeroVideo();
     initializeCarousel();
+    initializeScrollTrigger();
   });
 });
