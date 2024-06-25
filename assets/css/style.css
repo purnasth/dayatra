@@ -13,8 +13,22 @@
         @apply bg-logo-200 text-black;
     }
 
-    body {
+    body,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         @apply font-title;
+    }
+
+    ul,
+    li,
+    span,
+    p {
+        @apply font-body;
     }
 
     section {

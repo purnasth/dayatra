@@ -23,13 +23,13 @@ module.exports = {
     extend: {
       fontFamily: {
         title: ['"Inria Serif"', "serif"],
-        // body: ['"Lato"', "sans-serif"],
+        body: ['"Inria Sans"', "sans-serif"],
       },
       colors: {
         "logo-950": "#451a03",
         "logo-200": "#fde68a",
         "light-bg": "#e8e6e4",
-        "custom-white": "#f9f9f9",
+        "custom-white": "#ebdccb",
         "custom-black": "#190000",
       },
       container: {
