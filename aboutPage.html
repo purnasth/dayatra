@@ -51,7 +51,6 @@
     <header id="navbarComponent"></header>
 
     <section class="relative p-0 z-20">
-
         <img src="./assets/img/banner/about.jpg" alt="Building"
             class="w-full h-full lg:h-[130vh] object-cover object-bottom">
         <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-black z-0"></div>
@@ -65,9 +64,9 @@
         </div>
     </section>
 
-    <section class="p-0 m-0 bg-black z-50">
-        <div class="container mx-auto px-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
+    <section class="p-0 pb-24 m-0 bg-black z-20">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 justify-items-center">
                 <div class="text-center text-custom-white space-y-20 px-8 mt-28">
                     <h4 class="text-4xl leading-normal font-medium">
                         Dear guests, we would like to welcome you in our Da Yatra Courtyard Hotel & Resort.
@@ -86,7 +85,7 @@
                     </p>
 
                     <div
-                        class="border border-custom-white/60 outline outline-1 outline-custom-white/50 outline-offset-[12px] p-8 py-20 m-12">
+                        class="border border-custom-white/60 outline outline-1 outline-custom-white/50 -outline-offset-[12px] p-12 py-20 mx-12">
                         <ul class="space-y-6">
                             <li
                                 class="text-2xl text-custom-white/80 hover:text-custom-white font-light font-title transit duration-150 ease-linear">
@@ -118,6 +117,96 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div>
+                        <h4 class="pt-12 text-3xl">Awards</h4>
+
+                        <div class="m-12 flex items-center justify-center gap-8">
+                            <img src="./assets/img/others/award.png" alt="Award 2018" class="rounded-lg">
+                        </div>
+                    </div>
+
+                    <div class="pt-2 pb-10">
+                        <p class="my-12 font-title text-xl">Would you like to find our how to get to us?
+                        </p>
+                        <a href="https://www.google.com/maps/place/Da+Yatra+Courtyard+Hotel+%26+Resort/@28.2106499,83.9559929,17z/data=!4m9!3m8!1s0x3995951dd61bdd3d:0xfc30de1928bf2b9f!5m2!4m1!1i2!8m2!3d28.2106499!4d83.9585678!16s%2Fg%2F11b77ffnx4?coh=210790&entry=tts&g_ep=EgoyMDI0MDUyOC4wKgBIAVAD"
+                            target="_blank" rel="noopener noreferrer"
+                            class="bg-custom-white/20 hover:bg-custom-white/50 text-custom-white border border-white shadow-md px-8 py-4 rounded-full tracking-wider transition-all duration-300 ease-linear"
+                            aria-label="Open Map" title="Open Map">
+                            Open Map
+                        </a>
+                    </div>
+
+                    <div
+                        class="border border-custom-white/60 outline outline-1 outline-custom-white/50 outline-offset-[12px] p-8">
+                        <p class="my-12 font-title text-xl">Can't find the contact and information you're looking
+                            for?
+                            Write to us via
+                            this
+                            quick form.
+                        </p>
+                        <form class="mt-24 flex flex-wrap justify-between">
+                            <div class="w-full md:w-1/2">
+                                <ul class="pb-8 flex flex-col gap-4">
+                                    <li class="w-full pr-2"><label for="name"
+                                            class="inline-block w-full text-left text-base text-custom-white/80 font-title">Full
+                                            Name</label><input type="text" id="name" name="name"
+                                            class="text-lg w-full py-2 border-b border-custom-white/60 focus:outline-none focus:border-white bg-transparent text-custom-white"
+                                            required="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <ul class="pb-8 flex flex-col gap-4">
+                                    <li class="w-full pr-2"><label for="email"
+                                            class="inline-block w-full text-left text-base text-custom-white/80 font-title">Email
+                                            Address</label><input type="email" id="email" name="email"
+                                            class="text-lg w-full py-2 border-b border-custom-white/60 focus:outline-none focus:border-white bg-transparent text-custom-white"
+                                            required="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <ul class="pb-8 flex flex-col gap-4">
+                                    <li class="w-full pr-2"><label for="contactNumber"
+                                            class="inline-block w-full text-left text-base text-custom-white/80 font-title">Contact
+                                            Number</label><input type="tel" id="contactNumber" name="contactNumber"
+                                            class="text-lg w-full py-2 border-b border-custom-white/60 focus:outline-none focus:border-white bg-transparent text-custom-white"
+                                            required=""></li>
+                                </ul>
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <ul class="pb-8 flex flex-col gap-4">
+                                    <li class="w-full pr-2"><label for="subject"
+                                            class="inline-block w-full text-left text-base text-custom-white/80 font-title">Subject</label><input
+                                            type="text" id="subject" name="subject"
+                                            class="text-lg w-full py-2 border-b border-custom-white/60 focus:outline-none focus:border-white bg-transparent text-custom-white"
+                                            required=""></li>
+                                </ul>
+                            </div>
+                            <li class="w-full list-none"><label for="message"
+                                    class="inline-block w-full text-left text-base text-custom-white/80 font-title">Message</label><textarea
+                                    id="message" name="message" rows="2"
+                                    class="text-lg w-full py-2 border-b border-custom-white/60 focus:outline-none focus:border-white bg-transparent text-custom-white"
+                                    required=""></textarea></li>
+                            <div class="w-full mt-12">
+                                <!-- class="w-full bg-custom-white/20 hover:bg-custom-white/50 text-custom-white border border-white shadow-md px-8 py-4 rounded-full flex items-center justify-center gap-2 tracking-wider transition-all duration-300 ease-linear group" -->
+                                <button type="submit"
+                                    class="flex items-center justify-center z-50 bg-logo-200 text-custom-black scroll-to-top py-3 px-4 rounded-full outline-1 outline outline-logo-200/30 outline-offset-4 hover:animate-pulse hover:outline-offset-2 transition-all duration-100 ease-linear w-full group"
+                                    title="Send Message" aria-label="Send Message">
+                                    Send Message
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                        aria-hidden="true" class="group-hover:translate-x-2 transition-all duration-300"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
                 <div class="space-y-24 -translate-y-24">
                     <div class="w-full lg:w-[28rem] 3xl:w-[32rem]">
@@ -140,7 +229,8 @@
                     <div class="w-full lg:w-[28rem] 3xl:w-[32rem]">
                         <img src="./assets/img/others/spa.jpg" alt=""
                             class="mb-4 size-full lg:h-[80vh] 3xl:h-[60vh] object-cover outline outline-1 outline-white -outline-offset-[10px]">
-                        <span class="text-custom-white pb-2">Rejuvenate your senses with our exclusive SPA treatments,
+                        <span class="text-custom-white pb-2">Rejuvenate your senses with our exclusive SPA
+                            treatments,
                             crafted
                             to
                             pamper and
@@ -149,16 +239,14 @@
                     <div class="w-full lg:w-[28rem] 3xl:w-[32rem]">
                         <img src="./assets/img/others/swimming-pool.jpg" alt=""
                             class="mb-4 size-full lg:h-[80vh] 3xl:h-[60vh] object-cover outline outline-1 outline-white -outline-offset-[10px]">
-                        <span class="text-custom-white pb-2">Ascend to unparalleled luxury as you dive into bliss at our
+                        <span class="text-custom-white pb-2">Ascend to unparalleled luxury as you dive into bliss at
+                            our
                             Rooftop Swimming. </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="h-screen bg-black"></section>
-
 
     <div id="contactComponent"></div>
 
