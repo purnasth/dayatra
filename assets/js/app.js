@@ -187,24 +187,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  const scrollToTopButton = document.getElementById("scroll-to-top");
+  $(document).on("click", "#scroll-to-top", function (event) {
+    event.preventDefault();
 
-  if (scrollToTopButton) {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 100) {
-        scrollToTopButton.style.display = "block";
-      } else {
-        scrollToTopButton.style.display = "none";
-      }
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
-
-    scrollToTopButton.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    });
-  }
+  });
 
   function initializeScrollTrigger() {
     if (typeof gsap !== "undefined" && gsap) {
