@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link href="dist/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
@@ -62,70 +63,109 @@
             </p>
         </div>
 
-        <div class="gallery">
-            <div id="filter-button-group">
-                <button data-filter="*">Show All</button>
-                <button data-filter=".rooms">Rooms</button>
-                <button data-filter=".dining">Dining</button>
-                <button data-filter=".events">Events</button>
-            </div>
-            <div id="image_gallery">
-                <div id="lightgallery"
-                    class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                    <div class="element-item rooms group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item rooms group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item rooms group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item rooms group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item rooms group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item rooms group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item dining group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item events group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item events group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-                    <div class="element-item events group gallery-item overflow-hidden"
-                        data-src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg">
-                        <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
-                            class="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer" />
-                    </div>
-
+        <div class="mt-24 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div class="relative group overflow-hidden">
+                <img src="./assets/img/banner/about.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
                 </div>
-
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
             </div>
+            <div class="relative group overflow-hidden">
+                <img src="./assets/img/daYatraNight.webp" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+            <div class="relative group overflow-hidden">
+                <img src="https://hotelhimalaya.com/images/slideshow/m9TAT-1.jpg" alt=""
+                    class="w-full h-64 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-110 cursor-pointer" />
+                <div
+                    class="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-700 ease-linear">
+                </div>
+                <h4 class="absolute bottom-0 right-0 px-3 py-0 bg-custom-white">
+                    Da Yatra
+                </h4>
+            </div>
+
+
         </div>
     </section>
 
@@ -138,7 +178,7 @@
     <button type="button" onclick="scrollToTop()"
         class="group size-[3.25rem] fixed right-6 bottom-11 z-50 flex items-center justify-center bg-logo-200 text-custom-black scroll-to-top rounded-full outline-[1.5px] outline-dashed outline-black -outline-offset-4 translate-y-6 hover:outline-offset-1 transition-all duration-100 ease-linear"
         aria-label="WhatsApp" title="WhatsApp">
-        <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-125 transition-all duration-100 ease-linear"></i>
+        <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-all duration-100 ease-linear"></i>
     </button>
 
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
@@ -152,23 +192,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js'></script>
 
     <script src='./assets/js/app.js'></script>
-
-    <!-- <script>
-        $(document).ready(function () {
-            var $grid = $("#image_gallery").isotope({
-                itemSelector: ".element-item",
-            });
-
-            $("#filter-button-group").on("click", "button", function () {
-                var filterValue = $(this).attr("data-filter");
-                $grid.isotope({ filter: filterValue });
-            });
-        });
-
-        lightGallery(document.getElementById("lightgallery"), {
-            selector: "div",
-        }); 
-    </script> -->
 
 
 </body>
