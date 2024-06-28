@@ -185,6 +185,17 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       });
     }
+
+    if ($(".banner.owl-carousel").length) {
+      $(".banner.owl-carousel").owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        items: 1,
+      });
+    }
   }
 
   $(document).on("click", "#scroll-to-top", function (event) {

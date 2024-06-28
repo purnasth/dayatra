@@ -704,10 +704,6 @@ section {
   inset: 0px;
 }
 
-.-top-12 {
-  top: -3rem;
-}
-
 .-top-20 {
   top: -5rem;
 }
@@ -772,6 +768,10 @@ section {
   z-index: 50;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -801,6 +801,11 @@ section {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-6 {
@@ -835,6 +840,10 @@ section {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-8 {
@@ -973,16 +982,16 @@ section {
   height: 1.5rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-72 {
   height: 18rem;
 }
 
 .h-8 {
   height: 2rem;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .h-9 {
@@ -1168,12 +1177,28 @@ section {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-start {
+  align-content: flex-start;
+}
+
+.content-end {
+  align-content: flex-end;
 }
 
 .items-start {
@@ -1226,6 +1251,10 @@ section {
 
 .gap-24 {
   gap: 6rem;
+}
+
+.gap-32 {
+  gap: 8rem;
 }
 
 .gap-4 {
@@ -1302,6 +1331,10 @@ section {
   text-wrap: pretty;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1343,6 +1376,10 @@ section {
 
 .border-white\/80 {
   border-color: rgb(255 255 255 / 0.8);
+}
+
+.bg-\[\#b35b054f\] {
+  background-color: #b35b054f;
 }
 
 .bg-amber-200\/30 {
@@ -1389,11 +1426,6 @@ section {
   background-color: rgb(69 26 3 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -1403,12 +1435,12 @@ section {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black\/20 {
-  background-color: rgb(0 0 0 / 0.2);
-}
-
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
+}
+
+.bg-\[url\(\'\.\.\/img\/patterns\/mountains\.webp\'\)\] {
+  background-image: url('../img/patterns/mountains.webp');
 }
 
 .bg-\[url\(\'\.\/assets\/img\/daYatraEntry\.webp\'\)\] {
@@ -1431,16 +1463,20 @@ section {
   background-image: url('./assets/img/patterns/statue.svg');
 }
 
-.bg-\[url\(\'https\:\/\/www\.annapurnaview\.com\/uploads\/original\/03-tk2ITK10huZBp1EHEHNZxtgXkMqTEgFFu3KCVZNW\.jpg\'\)\] {
-  background-image: url('https://www.annapurnaview.com/uploads/original/03-tk2ITK10huZBp1EHEHNZxtgXkMqTEgFFu3KCVZNW.jpg');
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\/assets\/img\/patterns\/mountains\.webp\'\)\] {
+  background-image: url('./assets/img/patterns/mountains.webp');
 }
 
 .from-\[\#3c1e01\] {
@@ -1543,6 +1579,10 @@ section {
   background-repeat: no-repeat;
 }
 
+.bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1607,9 +1647,9 @@ section {
   padding-right: 2rem;
 }
 
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-12 {
@@ -1652,17 +1692,16 @@ section {
   padding-bottom: 2rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .pb-0 {
   padding-bottom: 0px;
 }
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pb-2 {
@@ -1781,6 +1820,10 @@ section {
   font-weight: 500;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1799,6 +1842,10 @@ section {
 
 .leading-relaxed {
   line-height: 1.625;
+}
+
+.leading-snug {
+  line-height: 1.375;
 }
 
 .tracking-wider {
@@ -1850,6 +1897,10 @@ section {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.opacity-20 {
+  opacity: 0.2;
+}
+
 .opacity-30 {
   opacity: 0.3;
 }
@@ -1858,8 +1909,16 @@ section {
   opacity: 0.35;
 }
 
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .opacity-70 {
   opacity: 0.7;
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
 }
 
 .mix-blend-luminosity {
@@ -2148,32 +2207,9 @@ section {
   background-color: rgb(0 0 0 / 0.5);
 }
 
-.group:hover .group-hover\:mix-blend-overlay {
-  mix-blend-mode: overlay;
-}
-
-.group:hover .group-hover\:mix-blend-darken {
-  mix-blend-mode: darken;
-}
-
-.group:hover .group-hover\:mix-blend-difference {
-  mix-blend-mode: difference;
-}
-
 .group:hover .group-hover\:grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.group:hover .group-hover\:grayscale-0 {
-  --tw-grayscale: grayscale(0);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.group:hover .group-hover\:backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 @media (min-width: 640px) {
@@ -2331,6 +2367,10 @@ section {
     gap: 2rem;
   }
 
+  .md\:text-pretty {
+    text-wrap: pretty;
+  }
+
   .md\:bg-none {
     background-image: none;
   }
@@ -2359,6 +2399,10 @@ section {
 
   .md\:pb-16 {
     padding-bottom: 4rem;
+  }
+
+  .md\:pb-28 {
+    padding-bottom: 7rem;
   }
 
   .md\:pt-32 {
