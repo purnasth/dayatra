@@ -598,20 +598,23 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-body,
-    a,
-    h1,
+h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
+  font-family: "Kaftan Serif", serif;
+}
+
+a,
+    body {
   font-family: "Inria Serif", serif;
 }
 
-ul,
+span,
+    ul,
     li,
-    span,
     p {
   font-family: "Inria Sans", sans-serif;
 }
@@ -1439,12 +1442,12 @@ section {
   --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\.\.\/img\/patterns\/mountains\.webp\'\)\] {
-  background-image: url('../img/patterns/mountains.webp');
-}
-
 .bg-\[url\(\'\.\/assets\/img\/daYatraEntry\.webp\'\)\] {
   background-image: url('./assets/img/daYatraEntry.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/patterns\/mountains\.webp\'\)\] {
+  background-image: url('./assets/img/patterns/mountains.webp');
 }
 
 .bg-\[url\(\'\.\/assets\/img\/patterns\/noise-dark\.svg\'\)\] {
@@ -1473,10 +1476,6 @@ section {
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/assets\/img\/patterns\/mountains\.webp\'\)\] {
-  background-image: url('./assets/img/patterns/mountains.webp');
 }
 
 .from-\[\#3c1e01\] {
@@ -2076,6 +2075,12 @@ section {
 
 .ease-linear {
   transition-timing-function: linear;
+}
+
+@font-face {
+  font-family: "Kaftan Serif";
+
+  src: url("../fonts/KaftanSerif-Regular.woff2");
 }
 
 .hover\:translate-x-2:hover {

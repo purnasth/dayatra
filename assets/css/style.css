@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Kaftan Serif";
+    src: url("../fonts/KaftanSerif-Regular.woff2");
+}
+
 @layer components {
     * {
         scrollbar-width: thin;
@@ -13,20 +18,23 @@
         @apply bg-logo-200 text-black;
     }
 
-    body,
-    a,
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
+        @apply font-luxury;
+    }
+
+    a,
+    body {
         @apply font-title;
     }
 
+    span,
     ul,
     li,
-    span,
     p {
         @apply font-body;
     }

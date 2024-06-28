@@ -24,6 +24,7 @@ module.exports = {
       fontFamily: {
         title: ['"Inria Serif"', "serif"],
         body: ['"Inria Sans"', "sans-serif"],
+        luxury: ['"Kaftan Serif"', "serif"],
       },
       colors: {
         "logo-950": "#451a03",
