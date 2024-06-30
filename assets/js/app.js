@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dots: false,
         center: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 15000,
         responsive: {
           0: { items: 1 },
           768: { items: 2 },
