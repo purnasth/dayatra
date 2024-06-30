@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 10000,
         responsive: {
           0: { items: 1 },
           768: { items: 2 },
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 10000,
         responsive: {
           0: { items: 1 },
           768: { items: 2 },
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: true,
         dots: false,
         autoplay: false,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 10000,
         items: 1,
       });
     }
@@ -171,18 +171,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if ($(".accommodation.owl-carousel").length) {
       $(".accommodation.owl-carousel").owlCarousel({
-        loop: true,
-        margin: 50,
+        // loop: true,
+        // margin: 50,
         nav: true,
         dots: false,
         center: true,
         autoplay: true,
-        autoplayTimeout: 5000,
-        responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          1024: { items: 1.85 },
-        },
+        autoplayTimeout: 15000,
+        items: 1,
+        // responsive: {
+        //   0: { items: 1 },
+        //   768: { items: 2 },
+        //   1024: { items: 1.85 },
+        // },
       });
     }
 
@@ -192,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 15000,
         items: 1,
       });
     }
