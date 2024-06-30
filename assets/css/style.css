@@ -62,7 +62,11 @@
     }
 
     #header.scrolled {
-        @apply backdrop-blur-[2px];
+        @apply backdrop-blur-[2px] transition-all duration-300 ease-linear;
+    }
+
+    #header.scrolled .nav-overlay {
+        @apply h-40 bg-gradient-to-b from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0)];
     }
 
     #header.scrolled #logo {

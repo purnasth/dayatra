@@ -49,9 +49,10 @@
   <header id="navbarComponent"></header>
 
   <section class="relative p-0 z-20">
-    <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0)]"></div>
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0)]">
+    </div>
     <video autoplay loop muted playsinline id="backgroundVideo" poster="./assets/img/daYatraNight.webp"
-      class="w-full h-full lg:h-screen object-cover">
+      class="w-full h-full lg:h-screen object-cover mix-blend-multiply">
       <source src="./assets/video/dayatra.mp4" type="video/mp4" />
       <track src="#" kind="captions" srcLang="en" label="english_captions">
       </track>
@@ -67,8 +68,13 @@
 
   <section id="facilitiesComponent" class="md:pb-0"></section>
 
-  <div class="size-full p-4 hidden md:flex items-center justify-end ">
-    <img src="./assets/img/patterns/boat.svg" alt="Boat" class="boat w-80 h-40 object-contain">
+  <div
+    class="w-full h-80 mix-blend-multiply opacity-20 bg-[url('./assets/img/patterns/mountains.webp')] bg-repeat-x bg-contain -z-10">
+  </div>
+
+  <div class="size-full p-4 hidden md:flex items-center justify-end mix-blend-hard-light opacity-80 -translate-y-10">
+    <img src="./assets/img/patterns/boat.webp" alt="Boat"
+      class="mix-blend-multiply opacity-80 boat w-80 h-36 object-contain">
   </div>
 
   <div class="w-80 h-full relative flex items-center justify-end flex-col translate-y-60">
@@ -82,7 +88,7 @@
   <section id="testimonialComponent"
     class="relative pt-28 px-0 bg-amber-50/60 bg-[url('./assets/img/patterns/noise-dark.svg')]"></section>
 
-  <section id="blogsComponent" class="px-4"></section>
+  <!-- <section id="blogsComponent" class="px-4"></section> -->
 
   <div id="contactComponent"></div>
 
