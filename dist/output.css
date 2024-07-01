@@ -1542,6 +1542,22 @@ section {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/assets\/img\/slider\/buildingLights\.webp\'\)\] {
+  background-image: url('./assets/img/slider/buildingLights.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/banner\/about\.webp\'\)\] {
+  background-image: url('./assets/img/banner/about.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/slider\.webp\'\)\] {
+  background-image: url('./assets/img/slider.webp');
+}
+
+.bg-\[url\(\'\.\/assets\/img\/banner\/buildingLights\.webp\'\)\] {
+  background-image: url('./assets/img/banner/buildingLights.webp');
+}
+
 .from-\[\#3c1e01\] {
   --tw-gradient-from: #3c1e01 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(60 30 1 / 0) var(--tw-gradient-to-position);
