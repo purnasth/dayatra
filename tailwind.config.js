@@ -31,7 +31,7 @@ module.exports = {
         "logo-200": "#fde68a",
         "light-bg": "#e8e6e4",
         "custom-white": "#ebdccb",
-        "custom-black": "#190000",
+        "custom-black": "#322018",
       },
       container: {
         screens: {

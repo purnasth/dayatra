@@ -926,6 +926,10 @@ section {
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -1041,6 +1045,10 @@ section {
 
 .h-full {
   height: 100%;
+}
+
+.h-px {
+  height: 1px;
 }
 
 .h-screen {
@@ -1205,6 +1213,10 @@ section {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
@@ -1445,6 +1457,10 @@ section {
   background-color: rgb(0 0 0 / 0.7);
 }
 
+.bg-custom-black\/20 {
+  background-color: rgb(50 32 24 / 0.2);
+}
+
 .bg-custom-white {
   --tw-bg-opacity: 1;
   background-color: rgb(235 220 203 / var(--tw-bg-opacity));
@@ -1464,6 +1480,11 @@ section {
   background-color: rgb(69 26 3 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1471,19 +1492,6 @@ section {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-amber-100\/70 {
-  background-color: rgb(254 243 199 / 0.7);
-}
-
-.bg-\[\#\] {
-  background-color: #;
 }
 
 .bg-opacity-75 {
@@ -1518,6 +1526,10 @@ section {
   background-image: url('./assets/img/patterns/statue.svg');
 }
 
+.bg-\[url\(\'\.\/assets\/img\/slider\/buildingLights\.webp\'\)\] {
+  background-image: url('./assets/img/slider/buildingLights.webp');
+}
+
 .bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-vector\/beautiful-ornamental-pattern-background_1268-1093\.jpg\?t\=st\=1719745688\~exp\=1719749288\~hmac\=7cbd3fce559dc381020376adb9bd6d1056ba49b6d01537b505a17459177ecac7\&w\=740\'\)\] {
   background-image: url('https://img.freepik.com/free-vector/beautiful-ornamental-pattern-background_1268-1093.jpg?t=st=1719745688~exp=1719749288~hmac=7cbd3fce559dc381020376adb9bd6d1056ba49b6d01537b505a17459177ecac7&w=740');
 }
@@ -1540,22 +1552,6 @@ section {
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/assets\/img\/slider\/buildingLights\.webp\'\)\] {
-  background-image: url('./assets/img/slider/buildingLights.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/banner\/about\.webp\'\)\] {
-  background-image: url('./assets/img/banner/about.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/slider\.webp\'\)\] {
-  background-image: url('./assets/img/slider.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/banner\/buildingLights\.webp\'\)\] {
-  background-image: url('./assets/img/banner/buildingLights.webp');
 }
 
 .from-\[\#3c1e01\] {
@@ -1729,6 +1725,11 @@ section {
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1851,6 +1852,10 @@ section {
   font-family: "Inria Sans", sans-serif;
 }
 
+.font-luxury {
+  font-family: "Kaftan Serif", serif;
+}
+
 .font-title {
   font-family: "Inria Serif", serif;
 }
@@ -1950,7 +1955,11 @@ section {
 
 .text-custom-black {
   --tw-text-opacity: 1;
-  color: rgb(25 0 0 / var(--tw-text-opacity));
+  color: rgb(50 32 24 / var(--tw-text-opacity));
+}
+
+.text-custom-black\/50 {
+  color: rgb(50 32 24 / 0.5);
 }
 
 .text-custom-white {
@@ -1966,9 +1975,42 @@ section {
   color: rgb(235 220 203 / 0.8);
 }
 
+.text-logo-950 {
+  --tw-text-opacity: 1;
+  color: rgb(69 26 3 / var(--tw-text-opacity));
+}
+
+.text-logo-950\/40 {
+  color: rgb(69 26 3 / 0.4);
+}
+
+.text-logo-950\/50 {
+  color: rgb(69 26 3 / 0.5);
+}
+
+.text-logo-950\/60 {
+  color: rgb(69 26 3 / 0.6);
+}
+
+.text-logo-950\/80 {
+  color: rgb(69 26 3 / 0.8);
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-custom-black\/40 {
+  color: rgb(50 32 24 / 0.4);
+}
+
+.text-custom-black\/60 {
+  color: rgb(50 32 24 / 0.6);
+}
+
+.text-custom-black\/80 {
+  color: rgb(50 32 24 / 0.8);
 }
 
 .underline {
@@ -2323,6 +2365,11 @@ section {
   background-color: rgb(0 0 0 / 0.5);
 }
 
+.group:hover .group-hover\:text-custom-black {
+  --tw-text-opacity: 1;
+  color: rgb(50 32 24 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:-outline-offset-\[10px\] {
   outline-offset: -10px;
 }
@@ -2438,6 +2485,10 @@ section {
 
   .md\:max-w-64 {
     max-width: 16rem;
+  }
+
+  .md\:max-w-\[28rem\] {
+    max-width: 28rem;
   }
 
   .md\:translate-y-0 {
@@ -2606,16 +2657,12 @@ section {
     height: 80vh;
   }
 
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
-  .lg\:h-\[calc\] {
-    height: calc;
-  }
-
   .lg\:h-\[calc\(100vh-93px\)\] {
     height: calc(100vh - 93px);
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:w-3\/4 {

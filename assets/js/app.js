@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function loadComponents() {
     const components = [
-      { filePath: "assets/html/navbar.html", elementId: "navbarComponent" },
+      { filePath: "navbar.html", elementId: "navbarComponent" },
       { filePath: "assets/html/holiday.html", elementId: "holidayComponent" },
       { filePath: "assets/html/blogs.html", elementId: "blogsComponent" },
       { filePath: "assets/html/about.html", elementId: "aboutComponent" },

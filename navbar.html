@@ -1,0 +1,183 @@
+<header id="header" class="absolute w-full p-2 transition-all duration-200 ease-linear">
+    <!-- <div class="absolute inset-0 size-full bg-custotext-custom-black bg-[url('./assets/img/patterns/noise-dark.svg')] -z-10"></div> -->
+
+    <div class="nav-overlay absolute inset-0 pointer-events-none -z-10 transition-all duration-300 ease-linear"></div>
+
+    <div class="">
+        <div class="flex justify-between items-start p-4">
+            <div class="flex items-center justify-center gap-2 md:gap-6">
+                <button type="menu" id="toggleButton"
+                    class="focus:outline-none p-2 z-50 transition-all duration-500 ease-linear"
+                    aria-label="Toggle Button" title="Toggle">
+                    <i id="hamburgerIcon"
+                        class="fa-solid fa-bars text-xl text-white transition-all duration-500 ease-linear"></i>
+                    <i id="closeIcon"
+                        class="hidden fa-solid fa-xmark text-2xl text-custom-black/80 transition-all duration-500 ease-linear"></i>
+                </button>
+                <ul
+                    class="hidden md:flex items-center justify-center gap-4 lg:gap-6 text-custom-white text-base lg:text-lg">
+                    <li class="w-full">
+                        <a href="accommodation.html" class="navlink" aria-label="Stay">Stay</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="#" class="navlink" aria-label="Dine">Dine</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="#" class="navlink" aria-label="Events">Events</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="aboutPage.html" class="navlink" aria-label="Info">Info</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fixed left-1/2 top-0 -translate-x-1/2 mt-2">
+                <a href="index.html" aria-label="Logo">
+                    <img src="./assets/img/logo.svg" alt="Logo"
+                        class="w-24 md:w-32 h-32 object-contain transition-all duration-300 ease-linear hidden sm:block"
+                        id="logo" />
+                </a>
+            </div>
+            <div class="flex items-center justify-center gap-4">
+                <a href="tel:+97761452462" target="_blank"
+                    class="hidden md:flex items-center justify-center gap-2 text-custom-white px-4 py-2 rounded-xl tracking-wider"
+                    aria-label="Call" title="Call">
+                    <i class="fa-solid fa-phone text-sm"></i>
+                    +97761452462
+                </a>
+                <a href="https://www.hoteldayatra.com/booking.php" target="_blank" rel="noopener noreferrer"
+                    class="hidden md:block bg-custom-white/20 hover:bg-custom-white/50 text-custom-white border border-white shadow-md px-4 py-2 rounded-xl tracking-wider transition-all duration-300 ease-linear"
+                    aria-label="Reserve" title="Reserve">
+                    <i class="mr-2 fa-regular fa-clipboard"></i>
+                    Reserve
+                </a>
+                <a href="https://www.hoteldayatra.com/booking.php" target="_blank" rel="noopener noreferrer"
+                    class="block md:hidden text-custom-white px-4 py-2 transition-all duration-300 ease-linear"
+                    aria-label="Reserve" title="Reserve">
+                    <i class="fa-regular fa-clipboard text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="overlay"
+    class="fixed inset-0 bg-black/50 backdrop-blur-sm z-10 hidden transition-all duration-700 ease-linear">
+</div>
+<!-- <nav id="navMenu"
+    class="fixed left-0 top-0 w-2/3 md:max-w-64 h-screen overflow-y-auto bg-red-600 bg-[url('./assets/img/patterns/noise.svg')] transition-transform duration-300 ease-in-out z-40 p-2 -translate-x-full"> -->
+<nav id="navMenu"
+    class="fixed left-0 top-0 w-2/3 md:max-w-[28rem] h-screen overflow-y-auto bg-custom-white transition-transform duration-300 ease-in-out z-40 p-8 -translate-x-full">
+    <div class="relative mt-12">
+        <!-- <a href="index.html" aria-label="Logo">
+            <img src="./assets/img/logo.svg" alt="Logo"
+                class="w-24 md:w-32 h-auto object-contain transition-all duration-300 ease-linear ml-4" id="logo" />
+        </a> -->
+        <span class="uppercase text-custom-black/50">Menu</span>
+        <ul class="mt-8 links flex items-start justify-start gap-2 md:gap-4 flex-col">
+            <li class="w-full">
+                <a href="accommodation.html"
+                    class="navlink w-full pb-2 inline-block font-luxury text-4xl text-custom-black font-medium"
+                    aria-label="Stay">Stay</a>
+            </li>
+            <li class="w-full">
+                <a href="#" class="navlink w-full pb-2 inline-block font-luxury text-4xl text-custom-black font-medium"
+                    aria-label="Dine">Dine</a>
+            </li>
+            <li class="w-full">
+                <a href="#" class="navlink w-full pb-2 inline-block font-luxury text-4xl text-custom-black font-medium"
+                    aria-label="Events">Events</a>
+            </li>
+            <li class="w-full">
+                <a href="aboutPage.html"
+                    class="navlink w-full pb-2 inline-block font-luxury text-4xl text-custom-black font-medium"
+                    aria-label="Discover">Discover</a>
+            </li>
+        </ul>
+
+        <div class="my-8 w-full h-px -z-10 bg-custom-black/20"></div>
+
+        <div class="grid grid-cols-2">
+            <div>
+                <span class="uppercase text-custom-black/40">Stay</span>
+                <ul class="mt-4 links flex items-start justify-start gap-1 flex-col">
+                    <li class="w-full">
+                        <a href="accommodation.html"
+                            class="navlink w-full inline-block font-body text-lg text-custom-black/60 font-medium"
+                            aria-label="Deluxe Room">Deluxe Room</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="#"
+                            class="navlink w-full inline-block font-body text-lg text-custom-black/60 font-medium"
+                            aria-label="Family Room">Family Room</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="#"
+                            class="navlink w-full inline-block font-body text-lg text-custom-black/60 font-medium"
+                            aria-label="Suite Room">Suite Room</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="uppercase text-custom-black/40">Other</span>
+                <ul class="mt-4 links flex items-start justify-start gap-1 flex-col">
+                    <li class="w-full">
+                        <a href=""
+                            class="navlink w-full inline-block font-body text-lg text-custom-black/60 font-medium"
+                            aria-label="Home">Home</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="#"
+                            class="navlink w-full inline-block font-body text-lg text-custom-black/60 font-medium"
+                            aria-label="Info">Info</a>
+                    </li>
+                    <li class="w-full">
+                        <a href="#"
+                            class="navlink w-full inline-block font-body text-lg text-custom-black/60 font-medium"
+                            aria-label="Gallery">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="my-8 w-full h-px -z-10 bg-custom-black/20"></div>
+
+        <div class="mt-12 w-full flex items-center justify-between">
+            <a href="https://www.hoteldayatra.com/booking.php" target="_blank" rel="noopener noreferrer"
+                class="inline-block text-center w-auto backdrop-blur-[1px] text-black bg-black/30 hover:bg-amber-600/20 border border-amber-100 px-6 py-2 rounded-full text-lg tracking- shadow-md hover:shadow-lg transition-all duration-300 ease-linear"
+                aria-label="Reserve" title="Reserve">
+                <i class="mr-2 fa-regular fa-clipboard"></i>
+                Reserve
+            </a>
+
+            <ul class="flex items-center gap-4 mr-2">
+                <li class="group">
+                    <a href="#"
+                        class="text-custom-black/50 group-hover:text-custom-black transition-all duration-100 ease-linear"
+                        aria-label="WhatsApp" title="WhatsApp">
+                        <i
+                            class="fa-brands fa-whatsapp text-xl group-hover:scale-125 transition-all duration-300 ease-linear"></i>
+                    </a>
+                </li>
+                <li class="group">
+                    <a href="#"
+                        class="text-custom-black/50 group-hover:text-custom-black transition-all duration-300 ease-linear"
+                        aria-label="Facebook" title="Facebook">
+                        <i
+                            class="fa-brands fa-facebook-f text-base group-hover:scale-125 transition-all duration-300 ease-linear"></i>
+                    </a>
+                </li>
+                <li class="group">
+                    <a href="#"
+                        class="text-custom-black/50 group-hover:text-custom-black transition-all duration-300 ease-linear"
+                        aria-label="Instagram" title="Instagram">
+                        <i
+                            class="fa-brands fa-instagram text-xl group-hover:scale-125 transition-all duration-300 ease-linear"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
