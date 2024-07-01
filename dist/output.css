@@ -1415,13 +1415,13 @@ section {
   background-color: #b35b054f;
 }
 
-.bg-amber-200\/30 {
-  background-color: rgb(253 230 138 / 0.3);
+.bg-\[\#ebdccb\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 220 203 / var(--tw-bg-opacity));
 }
 
-.bg-amber-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 251 235 / var(--tw-bg-opacity));
+.bg-amber-200\/30 {
+  background-color: rgb(253 230 138 / 0.3);
 }
 
 .bg-amber-50\/60 {
@@ -1473,52 +1473,17 @@ section {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-amber-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
-}
-
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#ff0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 0 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#b6b609\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(182 182 9 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#b6b309\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(182 179 9 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#e7e425\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 228 37 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fffb2a\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 251 42 / var(--tw-bg-opacity));
-}
-
-.bg-amber-50\/90 {
-  background-color: rgb(255 251 235 / 0.9);
-}
-
-.bg-amber-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 243 199 / var(--tw-bg-opacity));
-}
-
 .bg-amber-100\/70 {
   background-color: rgb(254 243 199 / 0.7);
+}
+
+.bg-\[\#\] {
+  background-color: #;
 }
 
 .bg-opacity-75 {
@@ -1541,8 +1506,8 @@ section {
   background-image: url('./assets/img/patterns/noise.svg');
 }
 
-.bg-\[url\(\'\.\/assets\/img\/patterns\/room\.webp\'\)\] {
-  background-image: url('./assets/img/patterns/room.webp');
+.bg-\[url\(\'\.\/assets\/img\/patterns\/rooms\.webp\'\)\] {
+  background-image: url('./assets/img/patterns/rooms.webp');
 }
 
 .bg-\[url\(\'\.\/assets\/img\/patterns\/statue\.png\'\)\] {
@@ -1575,14 +1540,6 @@ section {
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/assets\/img\/patterns\/rooma\.webp\'\)\] {
-  background-image: url('./assets/img/patterns/rooma.webp');
-}
-
-.bg-\[url\(\'\.\/assets\/img\/patterns\/rooms\.webp\'\)\] {
-  background-image: url('./assets/img/patterns/rooms.webp');
 }
 
 .from-\[\#3c1e01\] {
@@ -2027,6 +1984,10 @@ section {
   opacity: 0.35;
 }
 
+.opacity-40 {
+  opacity: 0.4;
+}
+
 .opacity-60 {
   opacity: 0.6;
 }
@@ -2037,10 +1998,6 @@ section {
 
 .opacity-80 {
   opacity: 0.8;
-}
-
-.opacity-40 {
-  opacity: 0.4;
 }
 
 .mix-blend-multiply {
@@ -2635,6 +2592,14 @@ section {
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:h-\[calc\] {
+    height: calc;
+  }
+
+  .lg\:h-\[calc\(100vh-93px\)\] {
+    height: calc(100vh - 93px);
   }
 
   .lg\:w-3\/4 {

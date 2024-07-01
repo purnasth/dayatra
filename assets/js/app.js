@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if ($(".about.owl-carousel").length) {
       $(".about.owl-carousel").owlCarousel({
         loop: true,
-        margin: 0,
+        margin: 6,
         nav: false,
         dots: false,
         center: true,
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: true,
         dots: false,
         center: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 15000,
         items: 1,
         // responsive: {
