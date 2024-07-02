@@ -943,6 +943,14 @@ section {
   margin-top: auto;
 }
 
+.-ml-2 {
+  margin-left: -0.5rem;
+}
+
+.-ml-1 {
+  margin-left: -0.25rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1114,6 +1122,14 @@ section {
 
 .w-px {
   width: 1px;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .max-w-2xl {
