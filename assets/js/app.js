@@ -112,8 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
       $(".holiday.owl-carousel").owlCarousel({
         loop: true,
         margin: 32,
-        nav: true,
-        dots: false,
+        nav: false,
+        dots: true,
         autoplay: true,
         autoplayTimeout: 10000,
         responsive: {
@@ -128,8 +128,8 @@ document.addEventListener("DOMContentLoaded", () => {
       $(".blogs.owl-carousel").owlCarousel({
         loop: true,
         margin: 40,
-        nav: true,
-        dots: false,
+        nav: false,
+        dots: true,
         autoplay: true,
         autoplayTimeout: 10000,
         responsive: {
@@ -144,8 +144,8 @@ document.addEventListener("DOMContentLoaded", () => {
       $(".testimonial.owl-carousel").owlCarousel({
         loop: true,
         margin: 32,
-        nav: true,
-        dots: false,
+        nav: false,
+        dots: true,
         autoplay: false,
         autoplayTimeout: 10000,
         items: 1,
@@ -173,8 +173,8 @@ document.addEventListener("DOMContentLoaded", () => {
       $(".accommodation.owl-carousel").owlCarousel({
         // loop: true,
         // margin: 50,
-        nav: true,
-        dots: false,
+        nav: false,
+        dots: true,
         center: true,
         autoplay: false,
         autoplayTimeout: 15000,

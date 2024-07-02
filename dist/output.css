@@ -720,6 +720,11 @@ section {
   inset: 0px;
 }
 
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
 .-top-20 {
   top: -5rem;
 }
@@ -798,6 +803,10 @@ section {
 
 .col-span-3 {
   grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 
 .m-0 {
@@ -995,6 +1004,10 @@ section {
   height: 66.666667%;
 }
 
+.h-3\/4 {
+  height: 75%;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -1190,6 +1203,12 @@ section {
 .scale-75 {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-50 {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1470,6 +1489,11 @@ section {
   background-color: rgb(235 220 203 / 0.2);
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-logo-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 230 138 / var(--tw-bg-opacity));
@@ -1560,6 +1584,12 @@ section {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#ebdccb\] {
+  --tw-gradient-from: #ebdccb var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(235 220 203 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-\[rgba\(0\2c 0\2c 0\2c 0\)\] {
   --tw-gradient-from: rgba(0,0,0,0) var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(0, 0, 0, 0) var(--tw-gradient-to-position);
@@ -1604,6 +1634,10 @@ section {
 .via-black {
   --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #000 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-\[\#ebdccb\]\/20 {
+  --tw-gradient-to: rgb(235 220 203 / 0.2) var(--tw-gradient-to-position);
 }
 
 .to-\[rgba\(0\2c 0\2c 0\2c 0\)\] {
@@ -1836,6 +1870,10 @@ section {
   padding-top: 7rem;
 }
 
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1958,8 +1996,20 @@ section {
   color: rgb(50 32 24 / var(--tw-text-opacity));
 }
 
+.text-custom-black\/40 {
+  color: rgb(50 32 24 / 0.4);
+}
+
 .text-custom-black\/50 {
   color: rgb(50 32 24 / 0.5);
+}
+
+.text-custom-black\/60 {
+  color: rgb(50 32 24 / 0.6);
+}
+
+.text-custom-black\/80 {
+  color: rgb(50 32 24 / 0.8);
 }
 
 .text-custom-white {
@@ -1975,42 +2025,9 @@ section {
   color: rgb(235 220 203 / 0.8);
 }
 
-.text-logo-950 {
-  --tw-text-opacity: 1;
-  color: rgb(69 26 3 / var(--tw-text-opacity));
-}
-
-.text-logo-950\/40 {
-  color: rgb(69 26 3 / 0.4);
-}
-
-.text-logo-950\/50 {
-  color: rgb(69 26 3 / 0.5);
-}
-
-.text-logo-950\/60 {
-  color: rgb(69 26 3 / 0.6);
-}
-
-.text-logo-950\/80 {
-  color: rgb(69 26 3 / 0.8);
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-custom-black\/40 {
-  color: rgb(50 32 24 / 0.4);
-}
-
-.text-custom-black\/60 {
-  color: rgb(50 32 24 / 0.6);
-}
-
-.text-custom-black\/80 {
-  color: rgb(50 32 24 / 0.8);
 }
 
 .underline {
@@ -2030,6 +2047,10 @@ section {
   opacity: 0.1;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .opacity-20 {
   opacity: 0.2;
 }
@@ -2040,10 +2061,6 @@ section {
 
 .opacity-35 {
   opacity: 0.35;
-}
-
-.opacity-40 {
-  opacity: 0.4;
 }
 
 .opacity-60 {
@@ -2058,16 +2075,16 @@ section {
   opacity: 0.8;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
 
 .mix-blend-hard-light {
   mix-blend-mode: hard-light;
-}
-
-.mix-blend-exclusion {
-  mix-blend-mode: exclusion;
 }
 
 .mix-blend-luminosity {
@@ -2136,6 +2153,14 @@ section {
 
 .outline-offset-\[12px\] {
   outline-offset: 12px;
+}
+
+.-outline-offset-\[16px\] {
+  outline-offset: -16px;
+}
+
+.-outline-offset-\[1px\] {
+  outline-offset: -1px;
 }
 
 .outline-black {
@@ -2407,6 +2432,10 @@ section {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:-mt-36 {
     margin-top: -9rem;
   }
@@ -2461,6 +2490,10 @@ section {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
   }
 
   .md\:w-1\/2 {
@@ -2621,6 +2654,10 @@ section {
 
   .md\:opacity-100 {
     opacity: 1;
+  }
+
+  .md\:-outline-offset-\[20px\] {
+    outline-offset: -20px;
   }
 }
 
