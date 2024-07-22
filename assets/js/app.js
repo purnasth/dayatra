@@ -124,6 +124,22 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
+    if ($(".dining-more.owl-carousel").length) {
+      $(".dining-more.owl-carousel").owlCarousel({
+        loop: true,
+        margin: 32,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          1024: { items: 3 },
+        },
+      });
+    }
+
     if ($(".blogs.owl-carousel").length) {
       $(".blogs.owl-carousel").owlCarousel({
         loop: true,

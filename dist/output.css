@@ -995,6 +995,10 @@ section {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .size-11 {
   width: 2.75rem;
   height: 2.75rem;
@@ -1015,6 +1019,11 @@ section {
   height: 16rem;
 }
 
+.size-96 {
+  width: 24rem;
+  height: 24rem;
+}
+
 .size-\[3\.25rem\] {
   width: 3.25rem;
   height: 3.25rem;
@@ -1031,6 +1040,10 @@ section {
 
 .h-3\/4 {
   height: 75%;
+}
+
+.h-3\/5 {
+  height: 60%;
 }
 
 .h-32 {
@@ -1159,6 +1172,10 @@ section {
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .max-w-lg {
@@ -2150,6 +2167,10 @@ section {
   opacity: 0.8;
 }
 
+.opacity-90 {
+  opacity: 0.9;
+}
+
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
@@ -2248,6 +2269,10 @@ section {
 
 .outline-white {
   outline-color: #fff;
+}
+
+.outline-white\/50 {
+  outline-color: rgb(255 255 255 / 0.5);
 }
 
 .grayscale {
@@ -2477,6 +2502,10 @@ section {
   color: rgb(50 32 24 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:mix-blend-color-dodge {
+  mix-blend-mode: color-dodge;
+}
+
 .group:hover .group-hover\:-outline-offset-\[10px\] {
   outline-offset: -10px;
 }
@@ -2536,6 +2565,10 @@ section {
 
   .md\:ml-auto {
     margin-left: auto;
+  }
+
+  .md\:mt-12 {
+    margin-top: 3rem;
   }
 
   .md\:mt-28 {
