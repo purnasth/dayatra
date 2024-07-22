@@ -66,10 +66,17 @@
     }
 
     #header.scrolled .nav-overlay {
-        @apply h-40 bg-gradient-to-b from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0)];
+        @apply h-40 bg-gradient-to-b from-[rgba(0, 0, 0, 0.6)] to-[rgba(0, 0, 0, 0)];
     }
 
     #header.scrolled #logo {
         @apply h-20;
     }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }
