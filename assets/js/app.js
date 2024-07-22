@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const components = [
       { filePath: "navbar.html", elementId: "navbarComponent" },
       { filePath: "assets/html/holiday.html", elementId: "holidayComponent" },
+      { filePath: "assets/html/offers.html", elementId: "offersComponent" },
       { filePath: "assets/html/blogs.html", elementId: "blogsComponent" },
       { filePath: "assets/html/about.html", elementId: "aboutComponent" },
       {
@@ -136,6 +137,22 @@ document.addEventListener("DOMContentLoaded", () => {
           0: { items: 1 },
           768: { items: 2 },
           1024: { items: 3 },
+        },
+      });
+    }
+
+    if ($(".offers.owl-carousel").length) {
+      $(".offers.owl-carousel").owlCarousel({
+        loop: true,
+        margin: 24,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        responsive: {
+          0: { items: 1 },
+          768: { items: 2 },
+          1024: { items: 4 },
         },
       });
     }
