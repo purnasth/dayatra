@@ -60,6 +60,12 @@
             border: 5px solid #e9e9e9;
         }
 
+        @media (max-width: 768px) {
+            .revGallery-anchor {
+                width: calc(100% / 2);
+            }
+        }
+
         .gal-overlay {
             display: block;
             width: 100%;
@@ -121,21 +127,21 @@
             class="absolute inset-0 w-full h-64 bg-gradient-to-b from-logo-950/50 to-custom-white -z-10 pointer-events-none">
         </div>
         <div class="mt-12 max-w-3xl mx-auto text-center space-y-6">
-            <h2 class="text-custom-black text-4xl font-bold">Glimpse of the Hotel</h2>
-            <p class="text-custom-black text-xl">
+            <h2 class="text-custom-black text-2xl md:text-3xl lg:text-4xl font-bold">Glimpse of the Hotel</h2>
+            <p class="text-custom-black text-base md:text-xl text-justify md:text-center">
                 A luxuriant ambience where the mood is welcoming, calm, suffused with rich colors. Hotel Da Yatra
                 Courtyard is decorated with finesse and a classical touch is fused with western Nepalese stone works.
             </p>
         </div>
-        <div class="gallery mt-24">
-            <div class="flex items-center justify-center gap-4 my-16">
-                <button type="button" class="uppercase button bg-logo-950/50 hover:bg-logo-950/80 px-8 py-3 is-checked"
+        <div class="gallery mt-16 md:mt-24">
+            <div class="flex items-center justify-center gap-4 my-16 flex-wrap">
+                <button type="button" class="uppercase button bg-logo-950/50 hover:bg-logo-950/80 text-sm md:text-base px-4 md:px-8 py-2 md:py-3 is-checked"
                     data-filter="">all</button>
-                <button type="button" class="uppercase button bg-logo-950/50 hover:bg-logo-950/80 px-6 py-3"
+                <button type="button" class="uppercase button bg-logo-950/50 hover:bg-logo-950/80 text-sm md:text-base px-4 md:px-6 py-2 md:py-3"
                     data-filter=".rooms">Rooms</button>
-                <button type="button" class="uppercase button bg-logo-950/50 hover:bg-logo-950/80 px-6 py-3"
+                <button type="button" class="uppercase button bg-logo-950/50 hover:bg-logo-950/80 text-sm md:text-base px-4 md:px-6 py-2 md:py-3"
                     data-filter=".dine">Dine</button>
-                <button type="button" class="uppercase button bg-logo-950/50 hover:bg-logo-950/80 px-6 py-3"
+                <button type="button" class="uppercase button bg-logo-950/50 hover:bg-logo-950/80 text-sm md:text-base px-4 md:px-6 py-2 md:py-3"
                     data-filter=".hotel">Hotel</button>
             </div>
 
