@@ -84,3 +84,36 @@ input:-webkit-autofill:active {
     background-color: #451a03;
     color: #ebdccb;
 }
+
+.owl-carousel .owl-item {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.about.owl-carousel .owl-item {
+    opacity: 0.8;
+    transition: opacity 1.5s ease;
+}
+
+.owl-carousel .owl-item.active {
+    opacity: 1;
+}
+
+.banner.owl-carousel .owl-item.active img,
+.accommodation.owl-carousel .owl-item.active img {
+    animation: zoomIn 10s ease-in-out;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

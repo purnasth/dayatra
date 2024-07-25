@@ -108,7 +108,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function initializeCarousel() {
-    // Check if the carousels exist before initializing them
+    if ($(".banner.owl-carousel").length) {
+      $(".banner.owl-carousel").owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        items: 1,
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        mouseDrag: true,
+        touchDrag: true,
+      });
+    }
     if ($(".holiday.owl-carousel").length) {
       $(".holiday.owl-carousel").owlCarousel({
         loop: true,
@@ -116,12 +129,14 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: false,
         dots: true,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 5000,
         responsive: {
           0: { items: 1 },
           768: { items: 2 },
           1024: { items: 4 },
         },
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
       });
     }
 
@@ -132,12 +147,14 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: false,
         dots: true,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 5000,
         responsive: {
           0: { items: 1 },
           768: { items: 2 },
           1024: { items: 3 },
         },
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
       });
     }
 
@@ -148,12 +165,14 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: false,
         dots: true,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 5000,
         responsive: {
           0: { items: 1 },
           768: { items: 2 },
           1024: { items: 4 },
         },
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
       });
     }
 
@@ -179,9 +198,13 @@ document.addEventListener("DOMContentLoaded", () => {
         margin: 32,
         nav: false,
         dots: true,
-        autoplay: false,
-        autoplayTimeout: 10000,
+        autoplay: true,
+        autoplayTimeout: 5000,
         items: 1,
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
+        mouseDrag: false,
+        touchDrag: false,
       });
     }
 
@@ -193,12 +216,14 @@ document.addEventListener("DOMContentLoaded", () => {
         dots: false,
         center: true,
         autoplay: true,
-        autoplayTimeout: 15000,
+        autoplayTimeout: 5000,
         responsive: {
           0: { items: 1 },
           768: { items: 2 },
-          1024: { items: 1.5 },
+          1024: { items: 1.3 },
         },
+        animateOut: "fadeOut",
+        animateIn: "fadeIn",
       });
     }
 
@@ -209,27 +234,14 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: false,
         dots: true,
         center: true,
-        autoplay: false,
-        autoplayTimeout: 15000,
+        autoplay: true,
+        autoplayTimeout: 10000,
         items: 1,
         // responsive: {
         //   0: { items: 1 },
         //   768: { items: 2 },
         //   1024: { items: 1.85 },
         // },
-      });
-    }
-
-    if ($(".banner.owl-carousel").length) {
-      $(".banner.owl-carousel").owlCarousel({
-        loop: true,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        items: 1,
-        animateOut: "fadeOut", // Add this line for the fade-out effect
-        animateIn: "fadeIn", // Optional: Add this line for the fade-in effect
       });
     }
   }
