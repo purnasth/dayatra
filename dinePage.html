@@ -52,16 +52,17 @@
 
 
     <div class="banner owl-carousel owl-theme bg-white">
-        <img src="./assets/img/dine/dine1.webp" alt="Dine" class="w-full h-screen object-cover">
-        <img src="./assets/img/dine/dine2.webp" alt="Dine" class="w-full h-screen object-cover">
+        <img src="./assets/img/dine/dine1.webp" alt="Dine" class="w-full h-80 sm:h-full md:h-screen object-cover">
+        <img src="./assets/img/dine/dine2.webp" alt="Dine" class="w-full h-80 sm:h-full md:h-screen object-cover">
     </div>
 
-    <div class="pointer-events-none absolute inset-0 z-10">
+    <div class="pointer-events-none absolute inset-0 z-10 h-80 sm:h-full md:h-screen">
         <div class="size-full bg-gradient-to-b from-black/0 to-black/60">
             <div
-                class="p-12 w-full h-screen max-w-3xl mx-auto flex items-center text-center justify-end flex-col gap-6">
-                <h2 class="text-custom-white text-4xl font-medium">Exquisite Dining Experience</h2>
-                <h4 class="text-custom-white/70 text-base font-body">
+                class="p-12 pb-6 md:pb-12 max-w-3xl mx-auto size-full flex items-center text-center justify-end flex-col gap-6">
+                <h2 class="text-custom-white text-2xl md:text-3xl lg:text-4xl font-medium">Exquisite Dining Experience
+                </h2>
+                <h4 class="hidden md:block text-custom-white/70 text-sm md:text-base font-body">
                     Treat yourself to a hearty Himalayan breakfast whipped up by our masterchefs to kickstart a
                     funfilled day in and around Pokhara.
                 </h4>
@@ -71,62 +72,84 @@
 
 
     <section class="bg-custom-white relative">
-        <div class="grid grid-cols-2 gap-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
 
-            <div class="col-span-1">
+            <div class="col-span-1 order-2 md:order-1">
                 <img src="./assets/img/dine/dine1.webp" alt=""
-                    class="mb-4 size-full h-96 object-cover outline outline-2 outline-white -outline-offset-[12px]">
+                    class="hidden md:block mb-4 size-full h-96 object-cover outline outline-2 outline-white -outline-offset-[12px]">
 
 
-                <ul class="flex items-center gap-6 flex-wrap my-20">
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                <ul class="flex items-center gap-6 flex-wrap md:my-20">
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Gourmet Cuisine Selection
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Award-Winning Chefs
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Live Cooking Stations
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Sommelier-Selected Wine List
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Panoramic Dining Views
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Private Dining Rooms
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Seasonal Menus
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Vegan and Vegetarian Options
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Child-Friendly Menus
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         Signature Cocktails and Mocktails
                     </li>
-                    <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+                    <li
+                        class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-xs md:text-base">
+                        <span
+                            class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></span>
                         High Speed Wifi
                     </li>
                 </ul>
 
                 <div
-                    class="border border-custom-black/60 outline outline-1 outline-custom-black/50 -outline-offset-[12px] p-12 py-20">
+                    class="border border-custom-black/60 outline outline-1 outline-custom-black/50 -outline-offset-[12px] mt-16 md:m-0 p-12 py-20">
                     <ul class="space-y-6 text-cent er">
                         <li
                             class="flex items-center justify-between text-base text-custom-black/80 hover:text-custom-black font-light font-body transition-all duration-150 ease-linear">
@@ -189,13 +212,13 @@
                 </div>
 
             </div>
-            <div class="col-span-1">
-                <div class="space-y-4">
-                    <h5 class="text-3xl font-title leading-snug">
+            <div class="col-span-1 order-1 md:order-2">
+                <div class="space-y-8 md:space-y-4">
+                    <h5 class="text-xl md:text-2xl lg:text-text-3xl font-title leading-relaxed font-semibold">
                         Fooday's Restaurant is the hottest see-and-be-seen destination; elegant and sophisticated fine
                         dining.
                     </h5>
-                    <p>
+                    <p class="text-sm md:text-base text-justify">
                         Enjoy gourmet food in an ambient setting . The restaurant is located at the ground floor (lobby
                         area) of the hotel and is accessibly stationed. Fooday's is ideal for social gatherings, dinner
                         before business meetings. You could choose to enjoy exotic cocktails post work with friends and
@@ -266,8 +289,9 @@
         <div
             class="bg-logo-950 pointer-events-none absolute inset-0 w-full h-3/5 bg-repeat -z-20 mix-blend-multiply opacity-90">
         </div>
-        <div class="p-12 w-full max-w-6xl mx-auto space-y-6 text-center">
-            <h3 class="text-custom-white text-4xl font-medium leading-snug">Join us for a culinary journey that delights
+        <div class="pb-8 md:p-12 w-full max-w-6xl mx-auto space-y-6 text-center">
+            <h3 class="text-custom-white text-xl md:text-3xl lg:text-4xl font-medium leading-snug" style="line-height: 1.75;">Join us for a
+                culinary journey that delights
                 the senses
                 and creates lasting memories.</h3>
             <!-- <h4 class="text-custom-white/70 text-base font-body">

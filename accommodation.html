@@ -38,6 +38,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.animate.min.css">
+
 
   <link rel="stylesheet" href="./assets/css/vanilla.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -50,17 +55,20 @@
 
 
   <div class="banner owl-carousel owl-theme bg-white">
-    <img src="./assets/img/rooms/sr1.webp" alt="Suite Room" class="w-full h-screen object-cover">
-    <img src="./assets/img/rooms/fr1.webp" alt="Family Room" class="w-full h-screen object-cover">
-    <img src="./assets/img/rooms/drd1.webp" alt="Delue Double Room" class="w-full h-screen object-cover">
-    <img src="./assets/img/rooms/drs1.webp" alt="Deluxe Single Room" class="w-full h-screen object-cover">
+    <img src="./assets/img/rooms/sr1.webp" alt="Suite Room" class="w-full h-80 sm:h-full md:h-screen object-cover">
+    <img src="./assets/img/rooms/fr1.webp" alt="Family Room" class="w-full h-80 sm:h-full md:h-screen object-cover">
+    <img src="./assets/img/rooms/drd1.webp" alt="Delue Double Room"
+      class="w-full h-80 sm:h-full md:h-screen object-cover">
+    <img src="./assets/img/rooms/drs1.webp" alt="Deluxe Single Room"
+      class="w-full h-80 sm:h-full md:h-screen object-cover">
   </div>
 
-  <div class="pointer-events-none absolute inset-0 z-10">
+  <div class="pointer-events-none absolute inset-0 z-10 h-80 sm:h-full md:h-screen">
     <div class="size-full bg-gradient-to-b from-black/0 to-black/60">
-      <div class="p-12 w-full h-screen max-w-3xl mx-auto flex items-center text-center justify-end flex-col gap-6">
-        <h2 class="text-custom-white text-4xl font-medium">Stay in elegant simplicity</h2>
-        <h4 class="text-custom-white/70 text-base font-body">
+      <div
+        class="p-12 pb-6 md:pb-12 max-w-3xl mx-auto size-full flex items-center text-center justify-end flex-col gap-6">
+        <h2 class="text-custom-white text-2xl md:text-3xl lg:text-4xl font-medium">Stay in elegant simplicity</h2>
+        <h4 class="hidden md:block text-custom-white/70 text-sm md:text-base font-body">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolor veritatis harum perferendis
           aspernatur pariatur consequuntur?
         </h4>
@@ -68,16 +76,16 @@
     </div>
   </div>
 
-  <section class="bg-custom-white">
-    <div class="grid grid-cols-3 content-center gap-32 pt-0 p-8">
+  <section class="scroll-pt-[-2rem] bg-custom-white">
+    <div id="deluxe-room" class="grid grid-col-1 md:grid-cols-3 content-center gap-12 md:gap-32 pt-0 md:p-8">
       <div class="col-span-1 content-center w-full">
-        <h3 class="text-3xl leading-snug font-semibold">Deluxe Room</h3>
+        <h3 class="text-2xl md:text-3xl leading-snug font-semibold">Deluxe Room</h3>
         <p class="text-justify md:text-pretty text-base my-4">Our deluxe rooms are elegant, comfortable and
           spacious with all amenities one can conceive off. The mattresses and linen keep you warm and snug over the
           night. The rooms are entirely sound proof and the lighting is just right with a night light by the floor so
           nothing bothers you from getting a sound night's sleep.
         </p>
-        <div class="flex items-center gap-6 flex-wrap mb-20">
+        <div class="flex items-center gap-6 flex-wrap mb-12 md:mb-20">
           <span class="text-lg flex items-center gap-2 ">
             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
               stroke-linejoin="round" class="text-lg text-custom-black" height="1em" width="1em"
@@ -93,43 +101,49 @@
         </div>
         <!-- <h3 class="text-2xl mb-6">Facilities</h3> -->
         <ul class="flex items-center gap-6 flex-wrap">
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Lake Wing View
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Bay Window
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Rooftop Terrance
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             View of Fewa Lake
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Spectacular Himalayas' View
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Wifi
           </li>
         </ul>
       </div>
-      <div class="col-span-2 grid grid-cols-5 gap-8 p-8">
+      <div class="col-span-1 md:col-span-2 grid md:grid-cols-5 gap-8 md:p-8">
         <div class="col-span-2 content-end relative">
           <!-- <img src="./assets/img/rooms/room1.jpg" alt="Deluxe Room" class="object-cover rounded-2xl h-52"> -->
         </div>
-        <div class="col-span-3 relative">
+        <div class="col-span-3 relative order-1 md:order-1">
           <img src="./assets/img/rooms/drd1.webp" alt="Deluxe Room" class="object-cover rounded-2xl h-80">
         </div>
-        <div class="col-span-3  relative">
+        <div class="col-span-3 relative order-3 md:order-2">
           <img src="./assets/img/rooms/drs1.webp" alt="Deluxe Room" class="object-cover rounded-2xl h-80">
         </div>
-        <div class="col-span-2 content-start relative">
+        <div class="col-span-2 content-start relative order-2 md:order-3 hidden md:block">
           <img src="./assets/img/rooms/drs2.webp" alt="Deluxe Room" class="object-cover rounded-2xl h-52">
         </div>
       </div>
@@ -139,32 +153,31 @@
     </div>
   </section>
 
-  <section class="bg-logo-950 relative">
-    <div class="grid grid-cols-3 content-center gap-32 pt-0 p-8">
-
-      <div class="col-span-2 grid grid-cols-5 gap-8 p-8">
-        <div class="col-span-3  relative">
+  <section class="scroll-pt-[-2rem] bg-logo-950 relative">
+    <div id="family-room" class="grid grid-col-1 md:grid-cols-3 content-center gap-12 md:gap-32 pt-0 md:p-8">
+      <div class="col-span-1 md:col-span-2 grid md:grid-cols-5 gap-8 md:p-8 order-2 md:order-1">
+        <div class="col-span-3 relative order-1 md:order-1">
           <img src="./assets/img/rooms/fr1.webp" alt="Family Room" class="object-cover rounded-2xl h-80">
         </div>
         <div class="col-span-2 content-end relative">
           <!-- <img src="./assets/img/rooms/room1.jpg" alt="Family Room" class="object-cover rounded-2xl h-52"> -->
         </div>
-        <div class="col-span-2 content-start relative">
+        <div class="col-span-2 content-start relative order-2 md:order-3 hidden md:block">
           <img src="./assets/img/rooms/fr3.webp" alt="Family Room" class="object-cover rounded-2xl h-52">
         </div>
-        <div class="col-span-3  relative">
+        <div class="col-span-3 relative order-3 md:order-2">
           <img src="./assets/img/rooms/fr2.webp" alt="Family Room" class="object-cover rounded-2xl h-80">
         </div>
       </div>
 
-      <div class="col-span-1 content-center w-full text-custom-white/80">
-        <h3 class="text-3xl leading-snug font-semibold">Family Room</h3>
+      <div class="col-span-1 content-center w-full text-custom-white/80 order-1 md:order-12">
+        <h3 class=" text-2xl md:text-3xl leading-snug font-semibold">Family Room</h3>
         <p class="text-justify md:text-pretty text-base my-4">
           Our family rooms come with ample space and the rooms are interlocking with all of the above said amenities
           in
           place. Enjoy a family drama on the TV with room service available at the push of a button.
         </p>
-        <div class="flex items-center gap-6 flex-wrap mb-20">
+        <div class="flex items-center gap-6 flex-wrap mb-12 md:mb-20">
           <span class="text-lg flex items-center gap-2 ">
             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
               stroke-linejoin="round" class="text-lg" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -179,27 +192,33 @@
         </div>
         <!-- <h3 class="text-2xl mb-6">Facilities</h3> -->
         <ul class="flex items-center gap-6 flex-wrap">
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-60 -z-10"></div>
             Lake Wing View
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-60 -z-10"></div>
             Bay Window
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-60 -z-10"></div>
             Rooftop Terrance
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-60 -z-10"></div>
             View of Fewa Lake
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-60 -z-10"></div>
             Spectacular Himalayas' View
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-60 -z-10"></div>
             Wifi
           </li>
@@ -211,17 +230,17 @@
     </div>
   </section>
 
-  <section class="bg-custom-white">
-    <div class="grid grid-cols-3 content-center gap-32 pt-0 p-8">
+  <section class="scroll-pt-[-2rem] bg-custom-white">
+    <div id="suite-room" class="grid grid-col-1 md:grid-cols-3 content-center gap-12 md:gap-32 pt-0 md:p-8">
       <div class="col-span-1 content-center w-full">
-        <h3 class="text-3xl leading-snug font-semibold">Suite Room</h3>
+        <h3 class="text-2xl md:text-3xl leading-snug font-semibold">Suite Room</h3>
         <p class="text-justify md:text-pretty text-base my-4">
           The deluxe suite room exudes luxury; it offers comfortable lounging a large work space and a kitchenette.
           The
           work play divide is blurred here you could choose to do both with comfort. It is strongly recommended for
           those who would like to have a conversation with a couple of friends over cups of tea or coffee.
         </p>
-        <div class="flex items-center gap-6 flex-wrap mb-20">
+        <div class="flex items-center gap-6 flex-wrap mb-12 md:mb-20">
           <span class="text-lg flex items-center gap-2 ">
             <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
               stroke-linejoin="round" class="text-lg text-custom-black" height="1em" width="1em"
@@ -237,43 +256,49 @@
         </div>
         <!-- <h3 class="text-2xl mb-6">Facilities</h3> -->
         <ul class="flex items-center gap-6 flex-wrap">
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Lake Wing View
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Bay Window
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Rooftop Terrance
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             View of Fewa Lake
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Spectacular Himalayas' View
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Wifi
           </li>
         </ul>
       </div>
-      <div class="col-span-2 grid grid-cols-5 gap-8 p-8">
+      <div class="col-span-1 md:col-span-2 grid md:grid-cols-5 gap-8 md:p-8">
         <div class="col-span-2 content-end relative">
           <!-- <img src="./assets/img/rooms/room1.jpg" alt="Occasions" class="object-cover rounded-2xl h-52"> -->
         </div>
-        <div class="col-span-3 relative">
+        <div class="col-span-3 relative order-1 md:order-1">
           <img src="./assets/img/rooms/sr1.webp" alt="Suite Room" class="object-cover rounded-2xl h-80">
         </div>
-        <div class="col-span-3  relative">
+        <div class="col-span-3 relative order-3 md:order-2">
           <img src="./assets/img/rooms/sr2.webp" alt="Suite Room" class="object-cover rounded-2xl h-80">
         </div>
-        <div class="col-span-2 content-start relative">
+        <div class="col-span-2 content-start relative order-2 md:order-3 hidden md:block">
           <img src="./assets/img/rooms/sr4.webp" alt="Suite Room" class="object-cover rounded-2xl h-52">
         </div>
       </div>
@@ -284,8 +309,8 @@
   </section>
 
   <section class="bg-custom-white relative">
-    <div class="grid grid-cols-3 gap-12">
-      <div class="col-span-1 sticky top-24 max-h-screen">
+    <div class="grid md:grid-cols-3 gap-12">
+      <div class="col-span-1 sticky top-24 max-h-screen order-2 md:order-1">
         <div class="bg-logo-950/50 p-8 border border-logo-950/50 shadow-md">
           <div class="my-4">
             <h3 class="text-2xl font-bold capitalize">Select Your Yatra Room</h3>
@@ -329,7 +354,7 @@
         </div>
       </div>
 
-      <div class="col-span-2">
+      <div class="md:col-span-2 order-1 md:order-2">
         <h4 class="text-3xl text-center mb-8">Room Amenities</h4>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-12 mt-24">
           <div class="flex items-center flex-col gap-4 p-4"><svg stroke="currentColor" fill="none" stroke-width="2"

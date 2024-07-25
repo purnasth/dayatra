@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const loadPromises = components.map((component) =>
-      loadHtml(component.filePath, component.elementId)
+      loadHtml(component.filePath, component.elementId),
     );
     return Promise.all(loadPromises);
   }
@@ -226,8 +226,10 @@ document.addEventListener("DOMContentLoaded", () => {
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 15000,
+        autoplayTimeout: 10000,
         items: 1,
+        animateOut: "fadeOut", // Add this line for the fade-out effect
+        animateIn: "fadeIn", // Optional: Add this line for the fade-in effect
       });
     }
   }

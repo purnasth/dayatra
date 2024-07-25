@@ -14,6 +14,10 @@
         /* scrollbar-color: #E9C279 #000000; */
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     ::selection {
         @apply bg-logo-200 text-black;
     }

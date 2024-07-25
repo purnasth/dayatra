@@ -50,15 +50,16 @@
 
 
   <div class="banner owl-carousel owl-theme bg-white">
-    <img src="./assets/img/hall/hall1.webp" alt="Da Yatra Hall" class="w-full h-screen object-cover">
-    <img src="./assets/img/hall/hall2.webp" alt="Da Yatra Hall" class="w-full h-screen object-cover">
+    <img src="./assets/img/hall/hall1.webp" alt="Da Yatra Hall" class="w-full h-80 sm:h-full md:h-screen object-cover">
+    <img src="./assets/img/hall/hall2.webp" alt="Da Yatra Hall" class="w-full h-80 sm:h-full md:h-screen object-cover">
   </div>
 
-  <div class="pointer-events-none absolute inset-0 z-10">
+  <div class="pointer-events-none absolute inset-0 z-10 h-80 sm:h-full md:h-screen">
     <div class="size-full bg-gradient-to-b from-black/0 to-black/60">
-      <div class="p-12 w-full h-screen max-w-3xl mx-auto flex items-center text-center justify-end flex-col gap-6">
-        <h2 class="text-custom-white text-4xl font-medium">Auspicious Events Center</h2>
-        <h4 class="text-custom-white/70 text-base font-body">
+      <div
+        class="p-12 pb-6 md:pb-12 max-w-3xl mx-auto size-full flex items-center text-center justify-end flex-col gap-6">
+        <h2 class="text-custom-white text-2xl md:text-3xl lg:text-4xl font-medium">Auspicious Events Center</h2>
+        <h4 class="hidden md:block text-custom-white/70 text-sm md:text-base font-body">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dolor veritatis harum perferendis
           aspernatur pariatur consequuntur?
         </h4>
@@ -67,9 +68,9 @@
   </div>
 
   <section class="bg-custom-white">
-    <div class="grid grid-cols-3 content-center gap-32 pt-0 p-8">
-      <div class="col-span-1 content-center w-full">
-        <h3 class="text-3xl leading-snug font-semibold">Da Yatra Hall</h3>
+    <div class="grid grid-col-1 md:grid-cols-3 content-center gap-12 md:gap-32 pt-0 md:p-8">
+      <div class="col-spsan-1 md:col-span-1 content-center w-full">
+        <h3 class="text-2xl md:text-3xl leading-snug font-semibold">Da Yatra Hall</h3>
         <p class="text-justify md:text-pretty text-base my-4">
           The hotel offers a spacious,
           elegant conference and meeting hall with splendid views of Fewa Lake and a private terrace. Our well trained
@@ -97,39 +98,44 @@
         </ul>
         <!-- <h3 class="text-2xl mb-6">Facilities</h3> -->
         <ul class="flex items-center gap-6 flex-wrap">
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></div>
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
+            <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Spacious Ballroom
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Grand Hall with Stage
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Elegant Reception Area
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             AV Equipment
           </li>
-          <li class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden">
+          <li
+            class="bg-[#b35b054f] px-4 py-2 rounded-2xl flex items-center gap-2 relative overflow-hidden text-sm md:text-base">
             <span class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10"></span>
             Flexible Seating Arrangements
           </li>
         </ul>
       </div>
-      <div class="col-span-2 grid grid-cols-5 gap-8 p-8">
+      <div class="col-span-1 md:col-span-2 grid md:grid-cols-5 gap-8 md:p-8">
         <div class="col-span-2 content-end relative">
           <!-- <img src="./assets/img/rooms/room1.jpg" alt="Deluxe Room" class="object-cover rounded-2xl h-52"> -->
         </div>
-        <div class="col-span-3 relative">
+        <div class="col-span-3 relative order-1 md:order-1">
           <img src="./assets/img/hall/hall1.webp" alt="Deluxe Room" class="object-cover rounded-2xl h-80">
         </div>
-        <div class="col-span-3  relative">
+        <div class="col-span-3 relative order-3 md:order-2">
           <img src="./assets/img/hall/hall2.webp" alt="Deluxe Room" class="object-cover rounded-2xl h-80">
         </div>
-        <div class="col-span-2 content-start relative">
+        <div class="col-span-2 content-start relative order-2 md:order-3 hidden md:block">
           <img src="./assets/img/hall/hall3.webp" alt="Deluxe Room" class="object-cover rounded-2xl h-52">
         </div>
       </div>
@@ -140,8 +146,8 @@
   </section>
 
   <section class="bg-custom-white relative">
-    <div class="grid grid-cols-2 gap-12">
-      <div class="col-span-1 sticky top-24 max-h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="col-span-1 sticky top-24 max-h-screen order-2 md:order-1">
         <div class="bg-logo-950/50 p-8 border border-logo-950/50 shadow-md">
           <div class="grid sm:grid-cols-2 gap-8">
 
@@ -242,7 +248,7 @@
         </div>
       </div>
 
-      <div class="col-span-1">
+      <div class="col-span-1 order-1 md:order-2">
         <!-- <h4 class="text-3xl text-center mb-8">Hall Amenities</h4> -->
         <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
           <div class="flex items-center flex-col gap-4 p-4"><svg stroke="currentColor" fill="none" stroke-width="2"

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.animate.min.css">
+
+    <link rel="stylesheet" href="./assets/css/vanilla.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .owl-carousel .owl-item {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .owl-carousel .owl-item.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner owl-carousel owl-theme bg-white">
+        <!-- <div class="item"> -->
+            <img src="./assets/img/rooms/sr1.webp" alt="Suite Room"
+                class="w-full h-80 sm:h-full md:h-screen object-cover">
+        <!-- </div> -->
+        <!-- <div class="item"> -->
+            <img src="./assets/img/rooms/fr1.webp" alt="Family Room"
+                class="w-full h-80 sm:h-full md:h-screen object-cover">
+        <!-- </div> -->
+        <!-- <div class="item"> -->
+            <img src="./assets/img/rooms/drd1.webp" alt="Delue Double Room"
+                class="w-full h-80 sm:h-full md:h-screen object-cover">
+        <!-- </div> -->
+        <!-- <div class="item"> -->
+            <img src="./assets/img/rooms/drs1.webp" alt="Deluxe Single Room"
+                class="w-full h-80 sm:h-full md:h-screen object-cover">
+        <!-- </div> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+        if ($(".banner.owl-carousel").length) {
+            $(".banner.owl-carousel").owlCarousel({
+                loop: true,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                items: 1,
+                animateOut: 'fadeOut', // Fade out effect
+                animateIn: 'fadeIn',   // Fade in effect
+                mouseDrag: true,
+                touchDrag: true,
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>
