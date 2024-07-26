@@ -1,14 +1,34 @@
+.owl-nav {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
 .owl-nav button {
     font-size: 2rem !important;
-    margin: 10px 40px !important;
     opacity: 0.5;
     transition: all 0.3s;
+    /* width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    color: #322018;
+    background: #ebdccb !important;
+    border: solid 1px #451a03 !important; */
 }
 
 .owl-nav button:hover {
     color: inherit !important;
     background: none !important;
     opacity: 1;
+}
+
+.owl-nav span {
+    font-family: serif !important;
 }
 
 /* .testimonial .owl-dots {

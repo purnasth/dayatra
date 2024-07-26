@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if ($(".banner.owl-carousel").length) {
       $(".banner.owl-carousel").owlCarousel({
         loop: true,
-        nav: false,
+        nav: true,
         dots: false,
         autoplay: true,
         autoplayTimeout: 10000,
@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
         animateIn: "fadeIn",
         mouseDrag: true,
         touchDrag: true,
+        navText: ["<i>&#8592;</i>", "<i>&#8594;</i>"],
       });
     }
     if ($(".holiday.owl-carousel").length) {
@@ -212,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
       $(".about.owl-carousel").owlCarousel({
         loop: true,
         margin: 6,
-        nav: false,
+        nav: true,
         dots: false,
         center: true,
         autoplay: true,
@@ -224,6 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         animateOut: "fadeOut",
         animateIn: "fadeIn",
+        navText: ["<i>&#8592;</i>", "<i>&#8594;</i>"],
       });
     }
 
