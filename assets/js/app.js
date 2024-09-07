@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if ($(".accommodation.owl-carousel").length) {
       $(".accommodation.owl-carousel").owlCarousel({
-        // loop: true,
+        loop: true,
         // margin: 50,
         nav: false,
         dots: true,
