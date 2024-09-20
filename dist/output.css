@@ -592,9 +592,9 @@ video {
   /* scrollbar-color: #E9C279 #000000; */
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* html {
+        scroll-behavior: smooth;
+    } */
 
 ::-moz-selection {
   --tw-bg-opacity: 1;
